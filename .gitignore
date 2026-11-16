@@ -1,0 +1,30 @@
+# Browser preview runtime output
+*.log
+*.pid
+
+# Android / Gradle
+**/.gradle/
+**/.kotlin/
+**/build/
+**/local.properties
+**/*.apk
+**/*.aab
+**/*.jks
+**/*.keystore
+**/*.iml
+**/captures/
+
+# IDE and OS
+**/.idea/
+**/.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Secrets and local environment
+**/.env
+**/.env.*
+**/secrets.properties
+**/*.pem
+**/*.p12
+**/*.key

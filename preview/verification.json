@@ -1,0 +1,504 @@
+{
+  "passed": true,
+  "generatedAt": "2026-11-16T08:43:15.587Z",
+  "url": "http://127.0.0.1:4178/",
+  "viewport": "1920x1080",
+  "screens": [
+    "nova-tv-home-1920x1080.png",
+    "nova-tv-search-1920x1080.png",
+    "nova-tv-detail-1920x1080.png",
+    "nova-tv-live-1920x1080.png",
+    "nova-tv-live-player-1920x1080.png",
+    "nova-tv-library-1920x1080.png",
+    "nova-tv-library-player-1920x1080.png",
+    "nova-tv-music-1920x1080.png",
+    "nova-tv-saved-1920x1080.png",
+    "nova-tv-saved-favorites-1920x1080.png",
+    "nova-tv-settings-1920x1080.png",
+    "nova-tv-home-1366x768.png"
+  ],
+  "errors": [],
+  "failed": [],
+  "summary": {
+    "pageCount": 5,
+    "pagesWithAllFocusReachable": [
+      "live",
+      "library",
+      "music",
+      "saved",
+      "settings"
+    ],
+    "textOverflowCount": 0,
+    "outOfBoundsCount": 0,
+    "musicPlayback": {
+      "paused": false,
+      "currentTime": 1.141711,
+      "duration": 24,
+      "progress": "3.89611%",
+      "stateLabel": "正在播放"
+    },
+    "musicPaused": {
+      "paused": true,
+      "stateLabel": "已暂停"
+    },
+    "livePlayer": {
+      "open": true,
+      "paused": false,
+      "ended": false,
+      "currentTime": 1.009992,
+      "duration": 600,
+      "readyState": 4,
+      "videoWidth": 480,
+      "videoHeight": 270,
+      "title": "NOVA 演示二台",
+      "source": "NOVA TVBox 兼容演示源",
+      "stateHidden": true,
+      "activeLabel": "暂停"
+    },
+    "livePlayerClosed": {
+      "playerHidden": true,
+      "pageStillOpen": true,
+      "activeId": "livePlayButton"
+    },
+    "libraryPlayer": {
+      "open": true,
+      "paused": false,
+      "ended": false,
+      "currentTime": 1.021249,
+      "duration": 300.141134,
+      "readyState": 4,
+      "videoWidth": 320,
+      "videoHeight": 240,
+      "title": "星际穿越",
+      "source": "NOVA TVBox 兼容演示源",
+      "stateHidden": true,
+      "activeLabel": "暂停"
+    },
+    "libraryPlayerClosed": {
+      "playerHidden": true,
+      "detailStillOpen": true,
+      "activeId": "detailPlay"
+    },
+    "apkOrAabBuilt": false
+  },
+  "home": {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "stage": {
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080,
+      "top": 0,
+      "right": 1920,
+      "bottom": 1080,
+      "left": 0
+    },
+    "sections": [
+      {
+        "className": "hero-row",
+        "x": 64,
+        "y": 136,
+        "width": 1792,
+        "height": 168,
+        "right": 1856,
+        "bottom": 304
+      },
+      {
+        "className": "feature-grid",
+        "x": 64,
+        "y": 322,
+        "width": 1792,
+        "height": 150,
+        "right": 1856,
+        "bottom": 472
+      },
+      {
+        "className": "glass-section recent-section",
+        "x": 64,
+        "y": 498,
+        "width": 1792,
+        "height": 224,
+        "right": 1856,
+        "bottom": 722
+      },
+      {
+        "className": "glass-section trending-section",
+        "x": 64,
+        "y": 744,
+        "width": 1792,
+        "height": 270,
+        "right": 1856,
+        "bottom": 1014
+      }
+    ],
+    "focusableCount": 19,
+    "active": "电视直播",
+    "featureCards": [
+      {
+        "width": 445.3,
+        "height": 154.8,
+        "left": 57.1,
+        "right": 502.4
+      },
+      {
+        "width": 431.5,
+        "height": 150,
+        "left": 517.5,
+        "right": 949
+      },
+      {
+        "width": 431.5,
+        "height": 150,
+        "left": 971,
+        "right": 1402.5
+      },
+      {
+        "width": 431.5,
+        "height": 150,
+        "left": 1424.5,
+        "right": 1856
+      }
+    ],
+    "recentCards": [
+      {
+        "width": 567.3,
+        "height": 138,
+        "left": 87,
+        "right": 654.3
+      },
+      {
+        "width": 567.3,
+        "height": 138,
+        "left": 676.3,
+        "right": 1243.7
+      },
+      {
+        "width": 567.3,
+        "height": 138,
+        "left": 1265.7,
+        "right": 1833
+      }
+    ],
+    "posterCards": [
+      {
+        "width": 333.2,
+        "height": 190,
+        "left": 87,
+        "right": 420.2
+      },
+      {
+        "width": 333.2,
+        "height": 190,
+        "left": 440.2,
+        "right": 773.4
+      },
+      {
+        "width": 333.2,
+        "height": 190,
+        "left": 793.4,
+        "right": 1126.6
+      },
+      {
+        "width": 333.2,
+        "height": 190,
+        "left": 1146.6,
+        "right": 1479.8
+      },
+      {
+        "width": 333.2,
+        "height": 190,
+        "left": 1499.8,
+        "right": 1833
+      }
+    ],
+    "textOverflows": [],
+    "scroll": [
+      1920,
+      1080
+    ]
+  },
+  "homeAfterRight": {
+    "activeText": "聚合片库",
+    "focused": [
+      "聚合片库"
+    ]
+  },
+  "homeAfterDown": {
+    "activeTitle": "浴血黑帮 第6季",
+    "activeClass": "recent-card focusable is-focused"
+  },
+  "search": {
+    "resultCount": 1,
+    "resultTitle": "星际穿越",
+    "countText": "1 个结果",
+    "overlayVisible": true
+  },
+  "detail": {
+    "visible": true,
+    "title": "星际穿越 · 诺兰",
+    "active": "detailPlay",
+    "searchHidden": true
+  },
+  "backToSearch": {
+    "detailHidden": true,
+    "searchVisible": true,
+    "activeClass": "search-result focusable is-focused"
+  },
+  "backHome": {
+    "searchHidden": true,
+    "activeId": "searchTrigger",
+    "appDimmed": false
+  },
+  "pages": {
+    "live": {
+      "visible": true,
+      "screen": {
+        "left": 0,
+        "top": 0,
+        "right": 1920,
+        "bottom": 1080
+      },
+      "focusableCount": 11,
+      "active": "返回首页",
+      "outOfBounds": [],
+      "textOverflows": [],
+      "navReachability": {
+        "reachable": 11,
+        "total": 11,
+        "unreachable": []
+      },
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    "library": {
+      "visible": true,
+      "screen": {
+        "left": 0,
+        "top": 0,
+        "right": 1920,
+        "bottom": 1080
+      },
+      "focusableCount": 16,
+      "active": "星际穿越",
+      "outOfBounds": [],
+      "textOverflows": [],
+      "navReachability": {
+        "reachable": 16,
+        "total": 16,
+        "unreachable": []
+      },
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    "music": {
+      "visible": true,
+      "screen": {
+        "left": 0,
+        "top": 0,
+        "right": 1920,
+        "bottom": 1080
+      },
+      "focusableCount": 9,
+      "active": "播放",
+      "outOfBounds": [],
+      "textOverflows": [],
+      "navReachability": {
+        "reachable": 9,
+        "total": 9,
+        "unreachable": []
+      },
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    "saved": {
+      "visible": true,
+      "screen": {
+        "left": 0,
+        "top": 0,
+        "right": 1920,
+        "bottom": 1080
+      },
+      "focusableCount": 11,
+      "active": "星际穿越",
+      "outOfBounds": [],
+      "textOverflows": [],
+      "navReachability": {
+        "reachable": 11,
+        "total": 11,
+        "unreachable": []
+      },
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    "settings": {
+      "visible": true,
+      "screen": {
+        "left": 0,
+        "top": 0,
+        "right": 1920,
+        "bottom": 1080
+      },
+      "focusableCount": 15,
+      "active": "内容源管理",
+      "outOfBounds": [],
+      "textOverflows": [],
+      "navReachability": {
+        "reachable": 15,
+        "total": 15,
+        "unreachable": []
+      },
+      "scroll": [
+        1920,
+        1080
+      ]
+    }
+  },
+  "interactions": {
+    "liveSelection": {
+      "active": "LIVE NOVA 演示二台 演示 · NOVA 演示直播",
+      "previewTitle": "NOVA 演示二台",
+      "selectedCards": [
+        "NOVA 演示二台"
+      ]
+    },
+    "liveBack": {
+      "liveHidden": true,
+      "appDimmed": false,
+      "activeClass": "feature-card feature-live focusable is-initial-focus is-focused"
+    },
+    "libraryFilter": {
+      "active": "NOVA TV 电影 · 电视直播 · 全网聚合 16:01 11月15日 星期日 农历九月廿六 17° 安庆 多云 19°/15° 搜索电影、剧集、演员、频道... 搜索 电视直播 央视卫视 · 地方频道 聚合片库 电影 · 剧集 · 动漫 · 综艺 音乐 音乐 · MV · 歌单 收藏与历史 我的收藏 · 观看记录 最近观看 查看全部 继续观看 星际穿越 已观看 58% 剧集 · S06 浴血黑帮 第6季 已观看 第3集 家庭 · 治愈 龙猫 已观看 72% 热门内容 01 沙丘 II 科幻史诗 02 小丑 犯罪剧情 03 复仇者联盟4：终局之战 超级英雄 04 长相思 东方古装 05 你的名字。 青春动画 NOVA LIVE · 标准直播源 电视直播 1 个直播源 · 4 个频道 直播源管理 CHANNEL DIRECTORY 频道目录 4 个频道 · 3 个分组 全部 演示 音乐 影视轮播 LIVE NOVA 演示一台 演示 · NOVA 演示直播 LIVE NOVA 演示二台 演示 · NOVA 演示直播 LIVE 电影轮播 影视轮播 · NOVA 演示直播 LIVE 音乐现场 音乐 · NOVA 演示直播 仅解析标准 M3U / TXT 直播列表；不实现虎牙、抖音房间号换取真实播放地址。 CURRENT SELECTION LIVE PREVIEW NOVA 演示二台 演示 · NOVA 演示直播 · NOVA TVBox 兼容演示源 源状态正常 1080P 频道名称仅用于界面演示。点击下方按钮，将连接公开授权的 HLS 测试信号验证全屏直播播放器。 播放当前频道 NOVA LIBRARY · 聚合片库 今晚看点 6 部 · 1 个来源 内容源 BROWSE BY GENRE 分类浏览 全部6 电影2 剧集2 动画2 综艺0 电影 按内容源返回顺序聚合 首页只展示精选内容，片源订阅与排序统一在设置页管理。 打开内容源设置 当前显示内置演示片库 启用影视源暂未返回内容，当前继续展示内置演示数据。 演示回退 科幻电影 星际穿越 2014 · 美国 · 开放测试片源 · 9.4 分 宇航员库珀穿过虫洞寻找人类新家园。该条目用于验证 NOVA TV 的 TVBox 苹果 CMS 导入、片库聚合与详情读取链路。 读取详情 加入收藏 精选片库 2 部内容 科幻电影 星际穿越 2014 · 美国 · 开放测试片源 · 9.4 分 科幻电影 沙丘 II 2024 · 美国 · HDR · 演示 · 8.8 分 NOVA MUSIC · 本地音乐 · MV · 歌单 音乐 4 首原创试听 音乐设置 NOW PLAYING 已暂停 NOVA TV · ORIGINAL PREVIEW 夜航星 · NOVA Session NOVA TV · 本地原创合成试听音轨 00:00 00:24 四条队列分别使用不同的原创合成音轨，用于验证真实切歌、播放、暂停、进度与后台音乐域交互。 UP NEXT 为你推荐 4 首队列 · 本地试听 夜航星 · NOVA Session NOVA TV · 本地原创合成试听音轨 00:24 晨雾电台 NOVA TV · 晨间环境音乐 00:24 蓝色时刻 NOVA TV · 深夜蓝调 00:24 雨夜歌单 NOVA TV · 雨声氛围选段 00:24 LISTENING NOTE “把电视变成客厅里的背景音乐，也保留一块专注听歌的屏幕。” MediaSession 风格独立音乐域 44.1 kHz · WAV NOVA PERSONAL · 个人片单 收藏与观看历史 观看历史 我的收藏 观看历史 按最近播放时间排序 · 本机演示数据 6 项 电影 星际穿越 2014 · 科幻 / 冒险 · 2小时49分 已观看 58% 剧集 浴血黑帮 第6季 2022 · 犯罪 / 剧情 · 第6季 已观看 第3集 动画电影 龙猫 1988 · 动画 / 奇幻 · 1小时26分 已观看 72% 电影 沙丘 II 2024 · 科幻 / 冒险 · 2小时46分 已观看 18% 剧集 长相思 2023 · 古装 / 爱情 · 全39集 已观看 第12集 动画电影 你的名字。 2016 · 动画 / 爱情 · 1小时46分 已观看 31% MY NOVA 我的 NOVA 跨影视、直播与音乐的本地个人空间。 6观看记录 6收藏内容 收藏与历史将共享同一份本地数据结构 本轮使用浏览器本地演示数据；Android 原生版计划使用 Room / DataStore 持久化。 清理观看记录 导出个人片单 NOVA SYSTEM · 设置 系统与内容源 TVBox 兼容试玩版 0.2.0 SETTINGS 设置分类 内容源管理TVBox · 影视 · 直播 浏览与首页模块 · 聚合 · 排序 播放设置解码 · 线路 · 续播 音乐设置后台 · 音质 · 歌单 外观与动效焦点 · 背景 · 字幕 关于 NOVA TV版本 · 组件 · 声明 内容源只在设置中管理，首页不单独显示源模块。 内容源管理 TVBox A/B 方言 · 苹果 CMS 片库 · M3U / TXT 直播 本地持久化 · 敏感 Header 脱敏 1/1启用订阅 2可执行站点 1直播源 1解析接口 远程订阅 粘贴 JSON 本地文件 订阅列表 1 个配置源 · 使用方向键选择 NOVA TVBox 兼容演示源 tvbox-desktop/1 /api/demo/config.json 已启用 2 可执行 · 1 直播 NOVA TVBox 兼容演示源 本地 TVBox 桩配置 · 可删除后重新导入自己的订阅 启用 /api/demo/config.json 1苹果 CMS 1HTML 规则 1直播列表 1解析接口 1需 Spider 0兼容直连 兼容性结论 部分兼容 NOVA 开放演示 CMS 苹果 CMS HTML 规则兼容样例 HTML 规则 另有 1 个站点含跳过项 运行检测 未检测 尚未执行运行检测 兼容性提示已同步 1 个 Spider 站点已识别，但预览版不会运行 jar/dex 同步 检测 停用 删除 预览版会识别 Spider（type=0）但不会运行 jar/dex；不实现虎牙/抖音房间号换地址，也不会绕过 DRM、付费或防盗链限制。 正在从 HTML 规则兼容样例 读取详情 NOVA SEARCH 搜索你今晚想看的内容 ENTER 打开 星际穿越 央视一套 音乐 克里斯托弗·诺兰 “诺兰” 的结果 2 个结果 · 已搜索在线片库 星际穿越 · 诺兰 NOVA TVBox 兼容演示源 网页规则 星际穿越 2014 · 科幻 / 冒险 · 2小时49分 电影 方向键选择 Enter 打开 Back / Esc 返回 网页规则 星际穿越 · 诺兰 NOVA TVBox 兼容演示源 由 HTML 规则站“HTML 规则兼容样例”返回的条目。 暂无直连片源 加入收藏 详情读取失败：HTML 规则条目缺少详情页地址 正在缓冲 网络恢复后会自动继续 LIVE · 电视直播 NOVA 演示二台 演示 · NOVA TVBox 兼容演示源 LIVE NOVA TVBox 兼容演示源 480×270 00:00 00:00 10 10 方向键选择 Enter 确认 Back / Esc 返回",
+      "selectedCategory": "电影",
+      "cardCount": 2,
+      "headerCount": "6 部 · 1 个来源"
+    },
+    "livePlayer": {
+      "open": true,
+      "paused": false,
+      "ended": false,
+      "currentTime": 1.009992,
+      "duration": 600,
+      "readyState": 4,
+      "videoWidth": 480,
+      "videoHeight": 270,
+      "title": "NOVA 演示二台",
+      "source": "NOVA TVBox 兼容演示源",
+      "stateHidden": true,
+      "activeLabel": "暂停"
+    },
+    "livePlayerClosed": {
+      "playerHidden": true,
+      "pageStillOpen": true,
+      "activeId": "livePlayButton"
+    },
+    "libraryPlayer": {
+      "open": true,
+      "paused": false,
+      "ended": false,
+      "currentTime": 1.021249,
+      "duration": 300.141134,
+      "readyState": 4,
+      "videoWidth": 320,
+      "videoHeight": 240,
+      "title": "星际穿越",
+      "source": "NOVA TVBox 兼容演示源",
+      "stateHidden": true,
+      "activeLabel": "暂停"
+    },
+    "libraryPlayerClosed": {
+      "playerHidden": true,
+      "detailStillOpen": true,
+      "activeId": "detailPlay"
+    },
+    "musicQueueFocusBefore": {
+      "text": "夜航星 · NOVA Session NOVA TV · 本地原创合成试听音轨 00:24",
+      "className": "music-queue-item focusable is-active is-focused"
+    },
+    "musicQueueTarget": {
+      "text": "晨雾电台 NOVA TV · 晨间环境音乐 00:24",
+      "className": "music-queue-item focusable is-focused"
+    },
+    "musicQueueFocusAfter": {
+      "paused": false,
+      "currentTime": 0.783954,
+      "audioFile": "nova_morning_mist.wav",
+      "title": "晨雾电台",
+      "text": "晨雾电台 NOVA TV · 晨间环境音乐 00:24",
+      "className": "music-queue-item focusable is-focused is-active"
+    },
+    "savedFavorites": {
+      "selectedTab": "我的收藏",
+      "panelTitle": "我的收藏",
+      "cardCount": 6,
+      "active": "电影 沙丘 II 2024 · 科幻 / 冒险 · 2小时46分 最近收藏"
+    },
+    "settingsSourceAction": {
+      "active": "NOVA TV 电影 · 电视直播 · 全网聚合 16:01 11月15日 星期日 农历九月廿六 17° 安庆 多云 19°/15° 搜索电影、剧集、演员、频道... 搜索 电视直播 央视卫视 · 地方频道 聚合片库 电影 · 剧集 · 动漫 · 综艺 音乐 音乐 · MV · 歌单 收藏与历史 我的收藏 · 观看记录 最近观看 查看全部 继续观看 星际穿越 已观看 58% 剧集 · S06 浴血黑帮 第6季 已观看 第3集 家庭 · 治愈 龙猫 已观看 72% 热门内容 01 沙丘 II 科幻史诗 02 小丑 犯罪剧情 03 复仇者联盟4：终局之战 超级英雄 04 长相思 东方古装 05 你的名字。 青春动画 NOVA LIVE · 标准直播源 电视直播 1 个直播源 · 4 个频道 直播源管理 CHANNEL DIRECTORY 频道目录 4 个频道 · 3 个分组 全部 演示 音乐 影视轮播 LIVE NOVA 演示一台 演示 · NOVA 演示直播 LIVE NOVA 演示二台 演示 · NOVA 演示直播 LIVE 电影轮播 影视轮播 · NOVA 演示直播 LIVE 音乐现场 音乐 · NOVA 演示直播 仅解析标准 M3U / TXT 直播列表；不实现虎牙、抖音房间号换取真实播放地址。 CURRENT SELECTION LIVE PREVIEW NOVA 演示二台 演示 · NOVA 演示直播 · NOVA TVBox 兼容演示源 源状态正常 1080P 频道名称仅用于界面演示。点击下方按钮，将连接公开授权的 HLS 测试信号验证全屏直播播放器。 播放当前频道 NOVA LIBRARY · 聚合片库 今晚看点 6 部 · 1 个来源 内容源 BROWSE BY GENRE 分类浏览 全部6 电影2 剧集2 动画2 综艺0 电影 按内容源返回顺序聚合 首页只展示精选内容，片源订阅与排序统一在设置页管理。 打开内容源设置 当前显示内置演示片库 启用影视源暂未返回内容，当前继续展示内置演示数据。 演示回退 科幻电影 星际穿越 2014 · 美国 · 开放测试片源 · 9.4 分 宇航员库珀穿过虫洞寻找人类新家园。该条目用于验证 NOVA TV 的 TVBox 苹果 CMS 导入、片库聚合与详情读取链路。 读取详情 加入收藏 精选片库 2 部内容 科幻电影 星际穿越 2014 · 美国 · 开放测试片源 · 9.4 分 科幻电影 沙丘 II 2024 · 美国 · HDR · 演示 · 8.8 分 NOVA MUSIC · 本地音乐 · MV · 歌单 音乐 4 首原创试听 音乐设置 NOW PLAYING 已暂停 NOVA TV · ORIGINAL PREVIEW 晨雾电台 NOVA TV · 晨间环境音乐 00:01 00:24 四条队列分别使用不同的原创合成音轨，用于验证真实切歌、播放、暂停、进度与后台音乐域交互。 UP NEXT 为你推荐 4 首队列 · 本地试听 夜航星 · NOVA Session NOVA TV · 本地原创合成试听音轨 00:24 晨雾电台 NOVA TV · 晨间环境音乐 00:24 蓝色时刻 NOVA TV · 深夜蓝调 00:24 雨夜歌单 NOVA TV · 雨声氛围选段 00:24 LISTENING NOTE “把电视变成客厅里的背景音乐，也保留一块专注听歌的屏幕。” MediaSession 风格独立音乐域 44.1 kHz · WAV NOVA PERSONAL · 个人片单 收藏与观看历史 观看历史 我的收藏 我的收藏 跨片源统一收藏 · 本机演示数据 6 项 电影 沙丘 II 2024 · 科幻 / 冒险 · 2小时46分 最近收藏 动画电影 你的名字。 2016 · 动画 / 爱情 · 1小时46分 已收藏 电影 复仇者联盟4：终局之战 2019 · 动作 / 科幻 · 3小时01分 已收藏 电影 小丑 2019 · 剧情 / 犯罪 · 2小时02分 已收藏 电影 星际穿越 2014 · 科幻 / 冒险 · 2小时49分 已收藏 动画电影 龙猫 1988 · 动画 / 奇幻 · 1小时26分 已收藏 MY NOVA 我的 NOVA 跨影视、直播与音乐的本地个人空间。 6观看记录 6收藏内容 收藏与历史将共享同一份本地数据结构 本轮使用浏览器本地演示数据；Android 原生版计划使用 Room / DataStore 持久化。 清理观看记录 导出个人片单 NOVA SYSTEM · 设置 系统与内容源 TVBox 兼容试玩版 0.2.0 SETTINGS 设置分类 内容源管理TVBox · 影视 · 直播 浏览与首页模块 · 聚合 · 排序 播放设置解码 · 线路 · 续播 音乐设置后台 · 音质 · 歌单 外观与动效焦点 · 背景 · 字幕 关于 NOVA TV版本 · 组件 · 声明 内容源只在设置中管理，首页不单独显示源模块。 内容源管理 TVBox A/B 方言 · 苹果 CMS 片库 · M3U / TXT 直播 本地持久化 · 敏感 Header 脱敏 1/1启用订阅 2可执行站点 1直播源 1解析接口 远程订阅 粘贴 JSON 本地文件 订阅列表 1 个配置源 · 使用方向键选择 NOVA TVBox 兼容演示源 tvbox-desktop/1 /api/demo/config.json 已启用 2 可执行 · 1 直播 NOVA TVBox 兼容演示源 本地 TVBox 桩配置 · 可删除后重新导入自己的订阅 启用 /api/demo/config.json 1苹果 CMS 1HTML 规则 1直播列表 1解析接口 1需 Spider 0兼容直连 兼容性结论 部分兼容 NOVA 开放演示 CMS 苹果 CMS HTML 规则兼容样例 HTML 规则 另有 1 个站点含跳过项 运行检测 未检测 尚未执行运行检测 兼容性提示已同步 1 个 Spider 站点已识别，但预览版不会运行 jar/dex 同步 检测 停用 删除 预览版会识别 Spider（type=0）但不会运行 jar/dex；不实现虎牙/抖音房间号换地址，也不会绕过 DRM、付费或防盗链限制。 正在试听 · 晨雾电台 NOVA SEARCH 搜索你今晚想看的内容 ENTER 打开 星际穿越 央视一套 音乐 克里斯托弗·诺兰 “诺兰” 的结果 2 个结果 · 已搜索在线片库 星际穿越 · 诺兰 NOVA TVBox 兼容演示源 网页规则 星际穿越 2014 · 科幻 / 冒险 · 2小时49分 电影 方向键选择 Enter 打开 Back / Esc 返回 科幻电影 星际穿越 2014 · 美国 · 开放测试片源 · 9.4 分 宇航员库珀穿过虫洞寻找人类新家园。该条目用于验证 NOVA TV 的 TVBox 苹果 CMS 导入、片库聚合与详情读取链路。 播放 正片 加入收藏 NOVA TVBox 兼容演示源 · NOVA 开放演示 CMS · NOVA 开放测试线路 正在缓冲 网络恢复后会自动继续 科幻电影 星际穿越 NOVA TVBox 兼容演示源 · NOVA 开放演示 CMS · NOVA 开放测试线路 LIVE NOVA TVBox 兼容演示源 320×240 00:00 00:00 10 10 方向键选择 Enter 确认 Back / Esc 返回",
+      "selectedSource": "查看内容源 NOVA TVBox 兼容演示源",
+      "toast": "正在试听 · 晨雾电台"
+    },
+    "sourceToggle": {
+      "active": "查看内容源 NOVA TVBox 兼容演示源",
+      "selectedSource": "查看内容源 NOVA TVBox 兼容演示源",
+      "sourceState": "已停用",
+      "toast": "NOVA TVBox 兼容演示源 · 已停用"
+    },
+    "settingsToggleBefore": {
+      "active": "首页显示最近观看",
+      "on": true
+    },
+    "settingsToggle": {
+      "section": "浏览与首页",
+      "active": "首页显示最近观看",
+      "on": false,
+      "toast": "首页显示最近观看：已关闭"
+    }
+  },
+  "scaling": {
+    "1366x768": {
+      "stage": {
+        "x": 0.33331298828125,
+        "y": 0,
+        "width": 1365.33349609375,
+        "height": 768,
+        "top": 0,
+        "right": 1365.6668090820312,
+        "bottom": 768,
+        "left": 0.33331298828125
+      },
+      "scale": "0.7111111111111111",
+      "overflow": [
+        1366,
+        768
+      ]
+    },
+    "3840x2160": {
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 3840,
+        "height": 2160,
+        "top": 0,
+        "right": 3840,
+        "bottom": 2160,
+        "left": 0
+      },
+      "scale": "2",
+      "overflow": [
+        3840,
+        2160
+      ]
+    }
+  }
+}
