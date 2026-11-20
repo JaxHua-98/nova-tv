@@ -1,0 +1,23 @@
+# 依赖与工具链
+node_modules/
+*.log
+
+# 构建中间产物
+android/build/
+android/dist/
+android/debug.keystore
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 备份与临时
+*.bak
+_backup-*/
+*.tmp
+
+# 发布令牌等本地敏感文件
+admin/data/nova/token.txt
+*.token

@@ -1,0 +1,38 @@
+{
+  "items": [
+    {
+      "id": "seed_juhe",
+      "name": "juhe-tvapi",
+      "kind": "jsdelivr",
+      "url": "https://cdn.jsdelivr.net/gh/ccAzy/juhe-tvapi@main/config.json",
+      "enabled": true,
+      "lastRun": 1795159768554,
+      "found": 93
+    },
+    {
+      "id": "seed_xptv",
+      "name": "XPTV",
+      "kind": "jsdelivr",
+      "url": "https://cdn.jsdelivr.net/gh/fangkuia/XPTV@main/CMS/XPTV.json",
+      "enabled": true,
+      "lastRun": 1795159768554,
+      "found": 35
+    },
+    {
+      "id": "seed_lg5798",
+      "name": "lg5798/tvbox",
+      "kind": "jsdelivr",
+      "url": "https://cdn.jsdelivr.net/gh/lg5798/tvbox@master/0821.json",
+      "enabled": true,
+      "lastRun": 1795159768554,
+      "found": 7
+    },
+    {
+      "id": "seed_rtian",
+      "name": "rtian001/tvbox",
+      "kind": "jsdelivr",
+      "url": "https://cdn.jsdelivr.net/gh/rtian001/tvbox@main/README.md",
+      "enabled": false
+    }
+  ]
+}

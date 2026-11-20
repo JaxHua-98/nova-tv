@@ -1,0 +1,535 @@
+/* ============ NOVA TV · 四大分类页 ============ */
+
+.cat-page .cat-shell {
+  position: absolute;
+  inset: 0;
+  padding: 36px 64px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cat-page .lib-page-title {
+  letter-spacing: 0.12em;
+}
+
+/* 返回片库 */
+
+.cat-back {
+  height: 40px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 14px;
+}
+
+.cat-back .icon {
+  width: 17px;
+  height: 17px;
+}
+
+.cat-back.is-focused,
+.cat-back:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+/* 顶栏状态点 */
+
+.cat-status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 12.5px;
+}
+
+.cat-status .status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #5fe3b6;
+  box-shadow: 0 0 10px rgba(95, 227, 182, 0.7);
+}
+
+/* 纵向滚动区 */
+
+.cat-scroll {
+  flex: 1;
+  min-height: 0;
+  margin-top: 22px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-right: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.22) transparent;
+}
+
+.cat-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cat-scroll::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* 模块 */
+
+.cat-shelf {
+  flex: none;
+}
+
+.cat-shelf .lib-shelf-head {
+  gap: 10px;
+}
+
+.cat-shelf-sub {
+  margin-left: 12px;
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.46);
+}
+
+/* 卡片补充信息位 */
+
+.cat-card {
+  width: 272px;
+  height: 170px;
+}
+
+.cat-card-copy {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cat-card .lib-card-title {
+  position: static;
+  width: 66%;
+  height: 10px;
+}
+
+.cat-card-meta {
+  width: 38%;
+  height: 7px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* 焦点 */
+
+.cat-card.is-focused,
+.cat-card:focus-visible {
+  transform: scale(1.035);
+  border-color: rgba(255, 255, 255, 0.66);
+  box-shadow: 0 20px 44px rgba(70, 90, 220, 0.34);
+}
+
+.cat-page .lib-shelf-link.is-focused,
+.cat-page .lib-pill.is-focused,
+.cat-page .lib-search.is-focused {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+/* 面板沿用片库样式，这里只补层级 */
+
+.cat-page .lib-panel {
+  z-index: 40;
+}
+
+.cat-page .lib-panel-card {
+  max-width: 780px;
+}
+
+/* 卡片中央图形：让占位卡读起来像"有内容" */
+.cat-card-glyph {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 8px 22px rgba(10, 16, 50, 0.32);
+}
+
+.cat-card-glyph .icon {
+  width: 24px;
+  height: 24px;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.cat-card .lib-card-title {
+  height: 12px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.cat-card-meta {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.34);
+}
+
+/* 页面内提示条 */
+.cat-toast {
+  position: absolute;
+  left: 50%;
+  bottom: 42px;
+  transform: translateX(-50%);
+  max-width: 720px;
+  padding: 12px 22px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(12, 18, 48, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  z-index: 45;
+  box-shadow: 0 18px 44px rgba(6, 10, 32, 0.5);
+}
+
+.cat-toast[hidden] {
+  display: none;
+}
+/* 分类页海报货架：与片库同一套 278×417 竖版卡 */
+.cat-page .lib-rail {
+  height: 414px;
+  gap: 24px;
+}
+
+/* 滚动条占 6px，卡片收到 276 才不会顶出右边界（6×276+5×24 = 1776 ≤ 1786） */
+.cat-page .lib-card.poster-card {
+  width: 276px;
+  height: 414px;
+}
+
+.cat-shelf {
+  gap: 10px;
+}
+
+.cat-page .poster-title {
+  font-size: 17px;
+}
+
+.cat-page .poster-meta {
+  font-size: 13px;
+}
+/* ============ 更多分类 ============ */
+
+.more-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 16px;
+}
+
+.more-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.more-group-title {
+  flex: none;
+  width: 108px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 10px;
+  background: none;
+  font-size: 13.5px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.52);
+  text-align: left;
+}
+
+.more-group-title.is-focused,
+.more-group-title:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+  color: #fff;
+}
+
+.more-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.more-chip {
+  height: 44px;
+  padding: 0 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 14.5px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.more-chip.is-focused,
+.more-chip:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  transform: scale(1.03);
+}
+
+.more-result {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-bottom: 24px;
+}
+
+.more-results {
+  display: grid;
+  grid-template-columns: repeat(6, 276px);
+  gap: 24px;
+}
+
+.more-load {
+  align-self: flex-start;
+  height: 48px;
+}
+
+.cat-more-page .cat-scroll {
+  gap: 0;
+}
+/* 更多分类：货架页与四个分类页同构 */
+.more-shelves {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.more-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.more-chip-row[hidden] {
+  display: none;
+}
+
+.cat-more-page .more-result .lib-shelf-head {
+  margin-bottom: 14px;
+}
+/* ============================================================
+   顶栏统一 2026-11-19
+   分类页复用片库首页的 .lib-topbar（运行时克隆同一份 DOM），
+   分类自己的标题 / 在线状态 / 筛选 / 排序 落到下面一行 .cat-toolbar
+   ============================================================ */
+
+.cat-page .cat-toolbar {
+  height: 52px;
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.cat-toolbar-eyebrow {
+  font-family: var(--font-display, system-ui);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.cat-toolbar-title {
+  margin: 0;
+  font-family: var(--font-display, system-ui);
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.cat-page .cat-toolbar .cat-status {
+  height: 32px;
+  padding: 0 12px;
+  font-size: 12px;
+}
+
+.cat-toolbar-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 97 顶栏 + 52 工具条之后，内容区从这里开始 */
+.cat-page .cat-scroll {
+  margin-top: 18px;
+  /* 和片库首页一致：滚动条不占位，卡片右缘才能贴到 1856 */
+  padding-right: 0;
+  scrollbar-width: none;
+}
+
+.cat-page .cat-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* 与片库首页同一套栅格：6 张、间距 20，右边缘正好贴齐 */
+.cat-shelf .lib-rail {
+  gap: 20px;
+  height: auto;
+  align-items: flex-start;
+}
+
+.cat-shelf .lib-rail .lib-card {
+  aspect-ratio: 2 / 3;
+}
+/* ============================================================
+   「查看全部」列表页 2026-11-19
+   顶栏 97 → 工具条 52 → chips 44 → 网格 785 → 底部 24 = 1080
+   ============================================================ */
+
+.cat-list-page .list-toolbar {
+  margin-top: 14px;
+}
+
+.list-chips {
+  margin-top: 12px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.list-chips[hidden] {
+  display: none;
+}
+
+/* 工具条右侧的排序档位：热播 / 最新 / 评分 / 年份 */
+.list-sorts {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 6px;
+}
+
+.list-sort {
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--font-display, system-ui);
+  font-size: 13.5px;
+  font-weight: 550;
+  white-space: nowrap;
+  transition: background 160ms var(--ease-out, ease), color 160ms, border-color 160ms;
+}
+
+.list-sort.is-active {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+  background: linear-gradient(135deg, #8f74f7 0%, #6a6cf2 52%, #5a63ea 100%);
+  box-shadow: 0 8px 20px rgba(104, 92, 240, 0.3);
+}
+
+.list-sort[hidden] {
+  display: none;
+}
+
+.list-sort.is-focused,
+.list-sort:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+  transform: scale(1.04);
+}
+
+.list-chips .more-chip {
+  flex: none;
+}
+
+.list-chips .more-chip.is-active {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.34);
+  background: linear-gradient(135deg, #8f74f7 0%, #6a6cf2 52%, #5a63ea 100%);
+  box-shadow: 0 8px 22px rgba(104, 92, 240, 0.32);
+}
+
+.cat-list-page .list-scroll {
+  margin-top: 16px;
+  gap: 20px;
+}
+
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 20px;
+  align-content: start;
+}
+
+.list-grid .lib-card,
+.list-grid .lib-card.poster-card {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  flex: none;
+}
+
+.list-grid .lib-card .poster-cover {
+  width: 100%;
+  height: 100%;
+}
+
+.list-more {
+  align-self: flex-start;
+  height: 48px;
+  margin-bottom: 8px;
+}
+
+.list-more[hidden] {
+  display: none;
+}
+
+/* 空态 / 失败态：复用 .library-empty，只是别被 [hidden] 与 display:flex 打架 */
+.list-empty {
+  grid-column: auto;
+  min-height: 320px;
+}
+
+.list-empty[hidden] {
+  display: none;
+}
+
+.list-empty .lib-btn {
+  margin-top: 6px;
+  height: 44px;
+}
+
+.list-empty .lib-btn[hidden] {
+  display: none;
+}

@@ -1,0 +1,1884 @@
+{
+  "rev": 14,
+  "items": {
+    "ffzy5-tv": {
+      "key": "ffzy5-tv",
+      "api": "http://ffzy5.tv/api.php/provide/vod/",
+      "host": "ffzy5.tv",
+      "brand": "ffzy5.tv",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": {
+        "api": "http://ffzy5.tv/api.php/provide/vod",
+        "ok": false,
+        "ms": null,
+        "items": 0,
+        "total": null,
+        "categories": 0,
+        "playRate": 0,
+        "playChecked": 0,
+        "playOk": 0,
+        "kind": "",
+        "sample": "",
+        "err": "TimeoutError:The operation was aborted due to timeout",
+        "contentType": "",
+        "checkedAt": 1795159275250,
+        "score": 0.2,
+        "grade": "D"
+      },
+      "score": 0.2,
+      "grade": "D",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "api-zuidapi-com": {
+      "key": "api-zuidapi-com",
+      "api": "https://api.zuidapi.com/api.php/provide/vod/",
+      "host": "api.zuidapi.com",
+      "brand": "最大资源",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": {
+        "api": "https://api.zuidapi.com/api.php/provide/vod",
+        "ok": true,
+        "ms": 2097,
+        "items": 20,
+        "total": 126046,
+        "categories": 59,
+        "playRate": 1,
+        "playChecked": 10,
+        "playOk": 10,
+        "kind": "hls-direct",
+        "sample": "命运好好玩",
+        "err": "",
+        "contentType": "text/html;charset=utf-8",
+        "checkedAt": 1795077290683,
+        "score": 0.96,
+        "grade": "A"
+      },
+      "score": 0.96,
+      "grade": "D",
+      "excluded": "测试排除",
+      "promotedSourceId": "src_7c6ea733-412b-4458-81a8-c2f9891dd48a",
+      "promotedKey": "api-zuidapi-com"
+    },
+    "bfzyapi-com": {
+      "key": "bfzyapi-com",
+      "api": "https://bfzyapi.com/api.php/provide/vod/",
+      "host": "bfzyapi.com",
+      "brand": "bfzyapi.com",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv",
+        "seed_lg5798"
+      ],
+      "seenCount": 20,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": {
+        "api": "https://bfzyapi.com/api.php/provide/vod",
+        "ok": false,
+        "ms": null,
+        "items": 0,
+        "total": null,
+        "categories": 0,
+        "playRate": 0,
+        "playChecked": 0,
+        "playOk": 0,
+        "kind": "",
+        "sample": "",
+        "err": "TypeError:fetch failed",
+        "contentType": "",
+        "checkedAt": 1795159275251,
+        "score": 0.2,
+        "grade": "D"
+      },
+      "score": 0.2,
+      "grade": "D",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "jszyapi-com": {
+      "key": "jszyapi-com",
+      "api": "https://jszyapi.com/api.php/provide/vod/",
+      "host": "jszyapi.com",
+      "brand": "极速资源",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 15,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": {
+        "api": "https://jszyapi.com/api.php/provide/vod",
+        "ok": true,
+        "ms": 1548,
+        "items": 20,
+        "total": 117128,
+        "categories": 48,
+        "playRate": 0,
+        "playChecked": 10,
+        "playOk": 0,
+        "kind": "list-only",
+        "sample": "大千小镇",
+        "err": "",
+        "contentType": "text/html;charset=utf-8",
+        "checkedAt": 1795159275252,
+        "score": 0.27,
+        "grade": "C"
+      },
+      "score": 0.27,
+      "grade": "C",
+      "excluded": "",
+      "promotedSourceId": "src_73a4bb94-e43e-4fdf-834e-25bbd4750dad",
+      "promotedKey": "jszyapi-com"
+    },
+    "tyyszy-com": {
+      "key": "tyyszy-com",
+      "api": "https://tyyszy.com/api.php/provide/vod/",
+      "host": "tyyszy.com",
+      "brand": "天涯资源",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": {
+        "api": "https://tyyszy.com/api.php/provide/vod",
+        "ok": true,
+        "ms": 1316,
+        "items": 20,
+        "total": 76232,
+        "categories": 39,
+        "playRate": 1,
+        "playChecked": 7,
+        "playOk": 7,
+        "kind": "hls-direct",
+        "sample": "轻吻甘甜",
+        "err": "",
+        "contentType": "text/html;charset=utf-8",
+        "checkedAt": 1795077290703,
+        "score": 0.98,
+        "grade": "A"
+      },
+      "score": 0.98,
+      "grade": "A",
+      "excluded": "",
+      "promotedSourceId": "src_7c6ea733-412b-4458-81a8-c2f9891dd48a",
+      "promotedKey": "tyyszy-com"
+    },
+    "api-wujinapi-com": {
+      "key": "api-wujinapi-com",
+      "api": "https://api.wujinapi.com/api.php/provide/vod/",
+      "host": "api.wujinapi.com",
+      "brand": "无尽资源",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": {
+        "api": "https://api.wujinapi.com/api.php/provide/vod",
+        "ok": true,
+        "ms": 2564,
+        "items": 20,
+        "total": 125444,
+        "categories": 63,
+        "playRate": 0.6,
+        "playChecked": 5,
+        "playOk": 3,
+        "kind": "hls-direct",
+        "sample": "11月19日 26-27赛季NBA常规赛 活塞VS鹈鹕",
+        "err": "",
+        "contentType": "text/html;charset=utf-8",
+        "checkedAt": 1795077290705,
+        "score": 0.77,
+        "grade": "B"
+      },
+      "score": 0.77,
+      "grade": "B",
+      "excluded": "",
+      "promotedSourceId": "src_7c6ea733-412b-4458-81a8-c2f9891dd48a",
+      "promotedKey": "api-wujinapi-com"
+    },
+    "www-mdzyapi-com": {
+      "key": "www-mdzyapi-com",
+      "api": "https://www.mdzyapi.com/api.php/provide/vod/",
+      "host": "www.mdzyapi.com",
+      "brand": "魔都资源",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": {
+        "api": "https://www.mdzyapi.com/api.php/provide/vod",
+        "ok": true,
+        "ms": 2252,
+        "items": 20,
+        "total": 92045,
+        "categories": 42,
+        "playRate": 1,
+        "playChecked": 10,
+        "playOk": 10,
+        "kind": "hls-direct",
+        "sample": "针线缘",
+        "err": "",
+        "contentType": "text/html;charset=utf-8",
+        "checkedAt": 1795077290707,
+        "score": 0.96,
+        "grade": "A"
+      },
+      "score": 0.96,
+      "grade": "A",
+      "excluded": "",
+      "promotedSourceId": "src_7c6ea733-412b-4458-81a8-c2f9891dd48a",
+      "promotedKey": "www-mdzyapi-com"
+    },
+    "360zy-com": {
+      "key": "360zy-com",
+      "api": "https://360zy.com/api.php/provide/vod/",
+      "host": "360zy.com",
+      "brand": "360资源",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": {
+        "api": "https://360zy.com/api.php/provide/vod",
+        "ok": true,
+        "ms": 2621,
+        "items": 20,
+        "total": 75405,
+        "categories": 51,
+        "playRate": 1,
+        "playChecked": 10,
+        "playOk": 10,
+        "kind": "hls-direct",
+        "sample": "十万狂花入梦来",
+        "err": "",
+        "contentType": "text/html;charset=utf-8",
+        "checkedAt": 1795077299274,
+        "score": 0.95,
+        "grade": "A"
+      },
+      "score": 0.95,
+      "grade": "A",
+      "excluded": "",
+      "promotedSourceId": "src_7c6ea733-412b-4458-81a8-c2f9891dd48a",
+      "promotedKey": "360zy-com"
+    },
+    "caiji-dyttzyapi-com": {
+      "key": "caiji-dyttzyapi-com",
+      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/",
+      "host": "caiji.dyttzyapi.com",
+      "brand": "caiji.dyttzyapi.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": {
+        "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",
+        "ok": false,
+        "ms": null,
+        "msAll": [],
+        "rounds": 3,
+        "items": 0,
+        "total": null,
+        "categories": 0,
+        "playRate": 0,
+        "playChecked": 0,
+        "playOk": 0,
+        "kind": "",
+        "sample": "",
+        "err": "TypeError:fetch failed",
+        "contentType": "",
+        "checkedAt": 1795159700628,
+        "score": 0.2,
+        "grade": "D"
+      },
+      "score": 0.2,
+      "grade": "D",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "cj-rycjapi-com": {
+      "key": "cj-rycjapi-com",
+      "api": "https://cj.rycjapi.com/api.php/provide/vod/",
+      "host": "cj.rycjapi.com",
+      "brand": "cj.rycjapi.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": {
+        "api": "https://cj.rycjapi.com/api.php/provide/vod",
+        "ok": false,
+        "ms": null,
+        "msAll": [],
+        "rounds": 3,
+        "items": 0,
+        "total": null,
+        "categories": 0,
+        "playRate": 0,
+        "playChecked": 0,
+        "playOk": 0,
+        "kind": "",
+        "sample": "",
+        "err": "TypeError:fetch failed",
+        "contentType": "",
+        "checkedAt": 1795159770564,
+        "score": 0.2,
+        "grade": "D"
+      },
+      "score": 0.2,
+      "grade": "D",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "www-hongniuzy2-com": {
+      "key": "www-hongniuzy2-com",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
+      "host": "www.hongniuzy2.com",
+      "brand": "红牛资源",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": {
+        "api": "https://www.hongniuzy2.com/api.php/provide/vod",
+        "ok": true,
+        "ms": 702,
+        "msAll": [
+          687,
+          702,
+          1228
+        ],
+        "rounds": 3,
+        "items": 20,
+        "total": 118206,
+        "categories": 44,
+        "playRate": 0.3,
+        "playChecked": 10,
+        "playOk": 3,
+        "kind": "hls-direct",
+        "sample": "漩涡深处",
+        "err": "",
+        "contentType": "text/html;charset=utf-8",
+        "checkedAt": 1795159770566,
+        "score": 0.68,
+        "grade": "B"
+      },
+      "score": 0.68,
+      "grade": "B",
+      "excluded": "",
+      "promotedSourceId": "src_7b895e94-6763-4ae8-9a78-5c76dd4d2d57",
+      "promotedKey": "www-hongniuzy2-com"
+    },
+    "api-guangsuapi-com": {
+      "key": "api-guangsuapi-com",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/",
+      "host": "api.guangsuapi.com",
+      "brand": "光速资源",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": {
+        "api": "https://api.guangsuapi.com/api.php/provide/vod",
+        "ok": false,
+        "ms": null,
+        "msAll": [],
+        "rounds": 3,
+        "items": 0,
+        "total": null,
+        "categories": 0,
+        "playRate": 0,
+        "playChecked": 0,
+        "playOk": 0,
+        "kind": "",
+        "sample": "",
+        "err": "TypeError:fetch failed",
+        "contentType": "",
+        "checkedAt": 1795159770568,
+        "score": 0.2,
+        "grade": "D"
+      },
+      "score": 0.2,
+      "grade": "D",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "ikunzyapi-com": {
+      "key": "ikunzyapi-com",
+      "api": "https://ikunzyapi.com/api.php/provide/vod/",
+      "host": "ikunzyapi.com",
+      "brand": "ikunzyapi.com",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 20,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "api-ukuapi-com": {
+      "key": "api-ukuapi-com",
+      "api": "https://api.ukuapi.com/api.php/provide/vod/",
+      "host": "api.ukuapi.com",
+      "brand": "U酷资源",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "www-huyaapi-com": {
+      "key": "www-huyaapi-com",
+      "api": "https://www.huyaapi.com/api.php/provide/vod/",
+      "host": "www.huyaapi.com",
+      "brand": "虎牙资源",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "api-xinlangapi-com": {
+      "key": "api-xinlangapi-com",
+      "api": "http://api.xinlangapi.com/xinlangapi.php/provide/vod/",
+      "host": "api.xinlangapi.com",
+      "brand": "api.xinlangapi.com",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 15,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "cj-lziapi-com": {
+      "key": "cj-lziapi-com",
+      "api": "https://cj.lziapi.com/api.php/provide/vod/",
+      "host": "cj.lziapi.com",
+      "brand": "cj.lziapi.com",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv",
+        "seed_lg5798"
+      ],
+      "seenCount": 20,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "hhzyapi-com": {
+      "key": "hhzyapi-com",
+      "api": "https://hhzyapi.com/api.php/provide/vod/",
+      "host": "hhzyapi.com",
+      "brand": "海豚资源",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 15,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "jyzyapi-com": {
+      "key": "jyzyapi-com",
+      "api": "https://jyzyapi.com/provide/vod/",
+      "host": "jyzyapi.com",
+      "brand": "鲸鱼资源",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 15,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "www-moduzy-com": {
+      "key": "www-moduzy-com",
+      "api": "https://www.moduzy.com/api.php/provide/vod/",
+      "host": "www.moduzy.com",
+      "brand": "www.moduzy.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "api-ffzyapi-com": {
+      "key": "api-ffzyapi-com",
+      "api": "https://api.ffzyapi.com/api.php/provide/vod/",
+      "host": "api.ffzyapi.com",
+      "brand": "api.ffzyapi.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "cj-ffzyapi-com": {
+      "key": "cj-ffzyapi-com",
+      "api": "http://cj.ffzyapi.com/api.php/provide/vod/",
+      "host": "cj.ffzyapi.com",
+      "brand": "cj.ffzyapi.com",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv",
+        "seed_lg5798"
+      ],
+      "seenCount": 25,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "ffzy1-tv": {
+      "key": "ffzy1-tv",
+      "api": "http://ffzy1.tv/api.php/provide/vod/",
+      "host": "ffzy1.tv",
+      "brand": "ffzy1.tv",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "api-wujinapi-me": {
+      "key": "api-wujinapi-me",
+      "api": "https://api.wujinapi.me/api.php/provide/vod/",
+      "host": "api.wujinapi.me",
+      "brand": "无尽资源",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": {
+        "api": "https://api.wujinapi.me/api.php/provide/vod",
+        "ok": true,
+        "ms": 2669,
+        "items": 20,
+        "total": 125444,
+        "categories": 63,
+        "playRate": 0.6,
+        "playChecked": 5,
+        "playOk": 3,
+        "kind": "hls-direct",
+        "sample": "11月19日 26-27赛季NBA常规赛 活塞VS鹈鹕",
+        "err": "",
+        "contentType": "text/html;charset=utf-8",
+        "checkedAt": 1795077299526,
+        "score": 0.77,
+        "grade": "B"
+      },
+      "score": 0.77,
+      "grade": "B",
+      "excluded": "",
+      "promotedSourceId": "src_7c6ea733-412b-4458-81a8-c2f9891dd48a",
+      "promotedKey": "api-wujinapi-me"
+    },
+    "api-ukuapi88-com": {
+      "key": "api-ukuapi88-com",
+      "api": "https://api.ukuapi88.com/api.php/provide/vod/",
+      "host": "api.ukuapi88.com",
+      "brand": "U酷资源",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "api-wujinapi-cc": {
+      "key": "api-wujinapi-cc",
+      "api": "https://api.wujinapi.cc/api.php/provide/vod/",
+      "host": "api.wujinapi.cc",
+      "brand": "无尽资源",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "cj-yayazy-net": {
+      "key": "cj-yayazy-net",
+      "api": "https://cj.yayazy.net/api.php/provide/vod/",
+      "host": "cj.yayazy.net",
+      "brand": "丫丫点播",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "api-wujinapi-net": {
+      "key": "api-wujinapi-net",
+      "api": "https://api.wujinapi.net/api.php/provide/vod/",
+      "host": "api.wujinapi.net",
+      "brand": "无尽资源",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "zuidazy-me": {
+      "key": "zuidazy-me",
+      "api": "http://zuidazy.me/api.php/provide/vod/",
+      "host": "zuidazy.me",
+      "brand": "最大资源",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "m3u8-apiyhzy-com": {
+      "key": "m3u8-apiyhzy-com",
+      "api": "https://m3u8.apiyhzy.com/api.php/provide/vod/",
+      "host": "m3u8.apiyhzy.com",
+      "brand": "m3u8.apiyhzy.com",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "延迟过高、分片下载失败",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "api-niuniuzy-me": {
+      "key": "api-niuniuzy-me",
+      "api": "https://api.niuniuzy.me/api.php/provide/vod/",
+      "host": "api.niuniuzy.me",
+      "brand": "牛牛点播",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "suoniapi-com": {
+      "key": "suoniapi-com",
+      "api": "https://suoniapi.com/api.php/provide/vod/",
+      "host": "suoniapi.com",
+      "brand": "suoniapi.com",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv",
+        "seed_lg5798"
+      ],
+      "seenCount": 25,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "caiji-maotaizy-cc": {
+      "key": "caiji-maotaizy-cc",
+      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/",
+      "host": "caiji.maotaizy.cc",
+      "brand": "caiji.maotaizy.cc",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "dbzy-tv": {
+      "key": "dbzy-tv",
+      "api": "https://dbzy.tv/api.php/provide/vod/",
+      "host": "dbzy.tv",
+      "brand": "dbzy.tv",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "subocaiji-com": {
+      "key": "subocaiji-com",
+      "api": "https://subocaiji.com/api.php/provide/vod/",
+      "host": "subocaiji.com",
+      "brand": "subocaiji.com",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "jinyingzy-com": {
+      "key": "jinyingzy-com",
+      "api": "https://jinyingzy.com/api.php/provide/vod/",
+      "host": "jinyingzy.com",
+      "brand": "金鹰点播",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "sdzyapi-com": {
+      "key": "sdzyapi-com",
+      "api": "https://sdzyapi.com/api.php/provide/vod/",
+      "host": "sdzyapi.com",
+      "brand": "闪电资源",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 15,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "caiji-moduapi-cc": {
+      "key": "caiji-moduapi-cc",
+      "api": "https://caiji.moduapi.cc/api.php/provide/vod/",
+      "host": "caiji.moduapi.cc",
+      "brand": "魔都资源",
+      "sources": [
+        "seed_juhe",
+        "seed_xptv"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "www-hongniuzy3-com": {
+      "key": "www-hongniuzy3-com",
+      "api": "https://www.hongniuzy3.com/api.php/provide/vod/",
+      "host": "www.hongniuzy3.com",
+      "brand": "红牛资源",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "xsd-sdzyapi-com": {
+      "key": "xsd-sdzyapi-com",
+      "api": "https://xsd.sdzyapi.com/api.php/provide/vod/",
+      "host": "xsd.sdzyapi.com",
+      "brand": "闪电资源",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "www-ckzy1-com": {
+      "key": "www-ckzy1-com",
+      "api": "https://www.ckzy1.com/api.php/provide/vod/",
+      "host": "www.ckzy1.com",
+      "brand": "www.ckzy1.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "分类极少、内容偏成人",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "155api-com": {
+      "key": "155api-com",
+      "api": "https://155api.com/api.php/provide/vod/",
+      "host": "155api.com",
+      "brand": "155api.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "apilsbzy1-com": {
+      "key": "apilsbzy1-com",
+      "api": "https://apilsbzy1.com/api.php/provide/vod/",
+      "host": "apilsbzy1.com",
+      "brand": "apilsbzy1.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "成人向内容",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "ckzy-me": {
+      "key": "ckzy-me",
+      "api": "https://ckzy.me/api.php/provide/vod/",
+      "host": "ckzy.me",
+      "brand": "ckzy.me",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "分类极少、内容偏成人",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "www-iqiyizyapi-com": {
+      "key": "www-iqiyizyapi-com",
+      "api": "https://www.iqiyizyapi.com/api.php/provide/vod/",
+      "host": "www.iqiyizyapi.com",
+      "brand": "www.iqiyizyapi.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "iqiyizyapi-com": {
+      "key": "iqiyizyapi-com",
+      "api": "https://iqiyizyapi.com/api.php/provide/vod/",
+      "host": "iqiyizyapi.com",
+      "brand": "iqiyizyapi.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "caiji-dbzy5-com": {
+      "key": "caiji-dbzy5-com",
+      "api": "https://caiji.dbzy5.com/api.php/provide/vod/",
+      "host": "caiji.dbzy5.com",
+      "brand": "caiji.dbzy5.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "api-maoyanapi-top": {
+      "key": "api-maoyanapi-top",
+      "api": "https://api.maoyanapi.top/api.php/provide/vod/",
+      "host": "api.maoyanapi.top",
+      "brand": "api.maoyanapi.top",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "cj-lzcaiji-com": {
+      "key": "cj-lzcaiji-com",
+      "api": "https://cj.lzcaiji.com/api.php/provide/vod/",
+      "host": "cj.lzcaiji.com",
+      "brand": "cj.lzcaiji.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "360zyzz-com": {
+      "key": "360zyzz-com",
+      "api": "https://360zyzz.com/api.php/provide/vod/",
+      "host": "360zyzz.com",
+      "brand": "360资源",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "caiji-kuaichezy-org": {
+      "key": "caiji-kuaichezy-org",
+      "api": "https://caiji.kuaichezy.org/api.php/provide/vod/",
+      "host": "caiji.kuaichezy.org",
+      "brand": "caiji.kuaichezy.org",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "pz-v88-qzz-io": {
+      "key": "pz-v88-qzz-io",
+      "api": "https://pz.v88.qzz.io/",
+      "host": "pz.v88.qzz.io",
+      "brand": "海豚资源",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 10,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "ffzy3-tv": {
+      "key": "ffzy3-tv",
+      "api": "http://ffzy3.tv/api.php/provide/vod/",
+      "host": "ffzy3.tv",
+      "brand": "ffzy3.tv",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "ffzy4-tv": {
+      "key": "ffzy4-tv",
+      "api": "http://ffzy4.tv/api.php/provide/vod/",
+      "host": "ffzy4.tv",
+      "brand": "ffzy4.tv",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "ffzy-tv": {
+      "key": "ffzy-tv",
+      "api": "http://ffzy.tv/api.php/provide/vod/",
+      "host": "ffzy.tv",
+      "brand": "ffzy.tv",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "www-ffzy-tv": {
+      "key": "www-ffzy-tv",
+      "api": "http://www.ffzy.tv/api.php/provide/vod/",
+      "host": "www.ffzy.tv",
+      "brand": "www.ffzy.tv",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "by-bfzyapi-com": {
+      "key": "by-bfzyapi-com",
+      "api": "http://by.bfzyapi.com/api.php/provide/vod/",
+      "host": "by.bfzyapi.com",
+      "brand": "by.bfzyapi.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "www-lzzy-tv": {
+      "key": "www-lzzy-tv",
+      "api": "http://www.lzzy.tv/api.php/provide/vod/",
+      "host": "www.lzzy.tv",
+      "brand": "www.lzzy.tv",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "lzizy4-com": {
+      "key": "lzizy4-com",
+      "api": "https://lzizy4.com/api.php/provide/vod/",
+      "host": "lzizy4.com",
+      "brand": "lzizy4.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "lzizy8-com": {
+      "key": "lzizy8-com",
+      "api": "https://lzizy8.com/api.php/provide/vod/",
+      "host": "lzizy8.com",
+      "brand": "lzizy8.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "lzizy2-com": {
+      "key": "lzizy2-com",
+      "api": "https://lzizy2.com/api.php/provide/vod/",
+      "host": "lzizy2.com",
+      "brand": "lzizy2.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "lzizy5-com": {
+      "key": "lzizy5-com",
+      "api": "https://lzizy5.com/api.php/provide/vod/",
+      "host": "lzizy5.com",
+      "brand": "lzizy5.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "lzizy-net": {
+      "key": "lzizy-net",
+      "api": "http://lzizy.net/api.php/provide/vod/",
+      "host": "lzizy.net",
+      "brand": "lzizy.net",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "lzizy3-com": {
+      "key": "lzizy3-com",
+      "api": "https://lzizy3.com/api.php/provide/vod/",
+      "host": "lzizy3.com",
+      "brand": "lzizy3.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "api-apiyhzy-com": {
+      "key": "api-apiyhzy-com",
+      "api": "https://api.apiyhzy.com/api.php/provide/vod/",
+      "host": "api.apiyhzy.com",
+      "brand": "api.apiyhzy.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "延迟过高、分片下载失败",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "zuidazy-co": {
+      "key": "zuidazy-co",
+      "api": "https://zuidazy.co/api.php/provide/vod/",
+      "host": "zuidazy.co",
+      "brand": "最大资源",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "niuniuzy3-com": {
+      "key": "niuniuzy3-com",
+      "api": "https://niuniuzy3.com/api.php/provide/vod/",
+      "host": "niuniuzy3.com",
+      "brand": "牛牛点播",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "www-haohuazy-com": {
+      "key": "www-haohuazy-com",
+      "api": "https://www.haohuazy.com/api.php/provide/vod/",
+      "host": "www.haohuazy.com",
+      "brand": "豪华资源",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "ty-tyyszy5-com": {
+      "key": "ty-tyyszy5-com",
+      "api": "https://ty.tyyszy5.com/api.php/provide/vod/",
+      "host": "ty.tyyszy5.com",
+      "brand": "天涯资源",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "rise-eu-org": {
+      "key": "rise-eu-org",
+      "api": "http://rise.eu.org/api.php/provide/vod/",
+      "host": "rise.eu.org",
+      "brand": "rise.eu.org",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "api-zeqaht-com": {
+      "key": "api-zeqaht-com",
+      "api": "https://api.zeqaht.com/api.php/provide/vod/",
+      "host": "api.zeqaht.com",
+      "brand": "api.zeqaht.com",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "yayazy2-com": {
+      "key": "yayazy2-com",
+      "api": "https://yayazy2.com/api.php/provide/vod/",
+      "host": "yayazy2.com",
+      "brand": "丫丫点播",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "360zy-tv": {
+      "key": "360zy-tv",
+      "api": "https://360zy.tv/api.php/provide/vod/",
+      "host": "360zy.tv",
+      "brand": "360资源",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "154-219-117-232-9981": {
+      "key": "154-219-117-232-9981",
+      "api": "http://154.219.117.232:9981/jacloudapi.php/provide/vod/",
+      "host": "154.219.117.232:9981",
+      "brand": "154.219.117.232:9981",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "mtzy-me": {
+      "key": "mtzy-me",
+      "api": "https://mtzy.me/api.php/provide/vod/",
+      "host": "mtzy.me",
+      "brand": "mtzy.me",
+      "sources": [
+        "seed_juhe"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "caiji-dbzy-tv": {
+      "key": "caiji-dbzy-tv",
+      "api": "https://caiji.dbzy.tv/api.php/provide/vod/at/josn/",
+      "host": "caiji.dbzy.tv",
+      "brand": "caiji.dbzy.tv",
+      "sources": [
+        "seed_xptv"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "api-wwzy-tv": {
+      "key": "api-wwzy-tv",
+      "api": "https://api.wwzy.tv/api.php/provide/vod/",
+      "host": "api.wwzy.tv",
+      "brand": "api.wwzy.tv",
+      "sources": [
+        "seed_xptv"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "json02-heimuer-xyz": {
+      "key": "json02-heimuer-xyz",
+      "api": "https://json02.heimuer.xyz/api.php/provide/vod/",
+      "host": "json02.heimuer.xyz",
+      "brand": "json02.heimuer.xyz",
+      "sources": [
+        "seed_xptv"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "hw8-live": {
+      "key": "hw8-live",
+      "api": "https://hw8.live/api.php/provide/vod/",
+      "host": "hw8.live",
+      "brand": "hw8.live",
+      "sources": [
+        "seed_xptv"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "www-fuju2024-cc-8013": {
+      "key": "www-fuju2024-cc-8013",
+      "api": "http://www.fuju2024.cc:8013/ruifenglb_api.php/provide/vod/",
+      "host": "www.fuju2024.cc:8013",
+      "brand": "www.fuju2024.cc:8013",
+      "sources": [
+        "seed_xptv"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "okzyw9-com": {
+      "key": "okzyw9-com",
+      "api": "https://okzyw9.com/api.php/provide/vod/",
+      "host": "okzyw9.com",
+      "brand": "okzyw9.com",
+      "sources": [
+        "seed_xptv"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "zpsps-com": {
+      "key": "zpsps-com",
+      "api": "https://zpsps.com/api.php/provide/vod/",
+      "host": "zpsps.com",
+      "brand": "zpsps.com",
+      "sources": [
+        "seed_xptv"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "iqyi-xiaohuangrentv-com": {
+      "key": "iqyi-xiaohuangrentv-com",
+      "api": "https://iqyi.xiaohuangrentv.com/api.php/provide/vod/",
+      "host": "iqyi.xiaohuangrentv.com",
+      "brand": "iqyi.xiaohuangrentv.com",
+      "sources": [
+        "seed_xptv"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "cj-vodimg-top": {
+      "key": "cj-vodimg-top",
+      "api": "https://cj.vodimg.top/api.php/provide/vod/",
+      "host": "cj.vodimg.top",
+      "brand": "cj.vodimg.top",
+      "sources": [
+        "seed_xptv"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "caiji-kczyapi-com": {
+      "key": "caiji-kczyapi-com",
+      "api": "https://caiji.kczyapi.com/api.php/provide/vod/from/kcm3u8/",
+      "host": "caiji.kczyapi.com",
+      "brand": "caiji.kczyapi.com",
+      "sources": [
+        "seed_xptv"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "collect-wolongzyw-com": {
+      "key": "collect-wolongzyw-com",
+      "api": "https://collect.wolongzyw.com/api.php/provide/vod/",
+      "host": "collect.wolongzyw.com",
+      "brand": "collect.wolongzyw.com",
+      "sources": [
+        "seed_xptv"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "p2100-net": {
+      "key": "p2100-net",
+      "api": "https://p2100.net/api.php/provide/vod/",
+      "host": "p2100.net",
+      "brand": "p2100.net",
+      "sources": [
+        "seed_xptv"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "api-apibdzy-com": {
+      "key": "api-apibdzy-com",
+      "api": "https://api.apibdzy.com/api.php/provide/vod/",
+      "host": "api.apibdzy.com",
+      "brand": "api.apibdzy.com",
+      "sources": [
+        "seed_lg5798"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "haiwaikan-com": {
+      "key": "haiwaikan-com",
+      "api": "https://haiwaikan.com/api.php/provide/vod/",
+      "host": "haiwaikan.com",
+      "brand": "haiwaikan.com",
+      "sources": [
+        "seed_lg5798"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    },
+    "api-kuaifan-tv": {
+      "key": "api-kuaifan-tv",
+      "api": "https://api.kuaifan.tv/api.php/provide/vod/",
+      "host": "api.kuaifan.tv",
+      "brand": "api.kuaifan.tv",
+      "sources": [
+        "seed_lg5798"
+      ],
+      "seenCount": 5,
+      "firstSeen": 1795077044600,
+      "lastSeen": 1795159768554,
+      "probe": null,
+      "score": 0,
+      "grade": "",
+      "excluded": "",
+      "promotedSourceId": "",
+      "promotedKey": ""
+    }
+  }
+}

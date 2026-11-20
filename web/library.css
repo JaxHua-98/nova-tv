@@ -1,0 +1,1715 @@
+﻿/* ============ NOVA TV · 聚合片库（视觉框架版） ============ */
+
+.page-library .lib-shell {
+  position: absolute;
+  inset: 0;
+  padding: 36px 64px 46px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---- 顶部 ---- */
+
+.lib-topbar {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.lib-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+
+
+
+
+
+.lib-sep {
+  width: 1px;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.lib-page-title {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.lib-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.lib-search {
+  width: 420px;
+  height: 46px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 15px;
+  text-align: left;
+}
+
+.lib-search .icon {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.lib-search span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.lib-pill {
+  height: 46px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.lib-pill .icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---- 主区域 ---- */
+
+.lib-main {
+  flex: 1;
+  min-height: 0;
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.lib-hero-row {
+  height: 420px;
+  display: flex;
+  gap: 24px;
+}
+
+/* ---- Banner ---- */
+
+.lib-banner {
+  position: relative;
+  width: 1120px;
+  height: 420px;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: #171a44;
+  text-align: left;
+}
+
+.lib-banner-art {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 90% at 16% 18%, rgba(178, 150, 255, 0.78), transparent 62%),
+    radial-gradient(95% 85% at 80% 26%, rgba(255, 158, 208, 0.6), transparent 64%),
+    linear-gradient(135deg, #3b3a9e 0%, #6a5ad6 48%, #2a2f78 100%);
+}
+
+.lib-banner-art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.045) 0 2px, transparent 2px 9px);
+  opacity: 0.7;
+}
+
+.lib-banner-glow {
+  position: absolute;
+  left: -60px;
+  bottom: -120px;
+  width: 520px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(120, 150, 255, 0.55), transparent 68%);
+  filter: blur(6px);
+}
+
+.lib-banner-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(8, 11, 34, 0.86) 0%, rgba(8, 11, 34, 0.42) 52%, rgba(8, 11, 34, 0.04) 100%);
+}
+
+.lib-banner-copy {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 40px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  max-width: 640px;
+}
+
+.lib-banner-tag {
+  align-self: flex-start;
+  padding: 6px 12px;
+  border-radius: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.14);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.lib-banner-title {
+  font-family: var(--font-display);
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 750;
+  color: #fff;
+}
+
+.lib-banner-meta {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.lib-banner-desc {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.lib-banner-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.lib-btn {
+  height: 48px;
+  padding: 0 22px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.lib-btn .icon {
+  width: 19px;
+  height: 19px;
+}
+
+.lib-btn.primary {
+  color: #14203f;
+  background: linear-gradient(180deg, #ffffff, #dbe4ff);
+}
+
+.lib-btn.ghost {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.lib-dots {
+  position: absolute;
+  left: 44px;
+  bottom: 24px;
+  z-index: 2;
+  display: flex;
+  gap: 8px;
+}
+
+.lib-dots i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.lib-dots i.is-active {
+  width: 22px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+/* ---- 分类卡 ---- */
+
+.lib-categories {
+  width: 648px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.lib-cat-row {
+  display: grid;
+  gap: 24px;
+  height: 186px;
+}
+
+.lib-cat-row.is-two {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.lib-cat-row.is-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.lib-cat {
+  position: relative;
+  overflow: hidden;
+  padding: 18px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.lib-cat-glow {
+  position: absolute;
+  right: -40px;
+  top: -50px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  filter: blur(4px);
+  opacity: 0.55;
+}
+
+.lib-cat.tone-violet .lib-cat-glow { background: radial-gradient(circle, #7c6bff, transparent 70%); }
+.lib-cat.tone-rose .lib-cat-glow { background: radial-gradient(circle, #ff7ab8, transparent 70%); }
+.lib-cat.tone-amber .lib-cat-glow { background: radial-gradient(circle, #ffb46a, transparent 70%); }
+.lib-cat.tone-sky .lib-cat-glow { background: radial-gradient(circle, #5cc8ff, transparent 70%); }
+.lib-cat.tone-plum .lib-cat-glow { background: radial-gradient(circle, #b487ff, transparent 70%); }
+
+.lib-cat-icon {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.lib-cat-icon .icon {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+.lib-cat-copy {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.lib-cat-copy strong {
+  font-family: var(--font-display);
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+
+.lib-cat-copy em {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.lib-cat.is-active {
+  border-color: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.13);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35), 0 18px 40px rgba(90, 100, 255, 0.22);
+}
+
+/* ---- 内容货架 ---- */
+
+.lib-shelf {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lib-shelf-head {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lib-shelf-icon {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.lib-shelf-icon .icon {
+  width: 17px;
+  height: 17px;
+  color: #fff;
+}
+
+.lib-shelf-head h2 {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+
+.lib-shelf-link {
+  margin-left: auto;
+  height: 32px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 13px;
+}
+
+.lib-shelf-link .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.lib-rail {
+  height: 168px;
+  display: flex;
+  gap: 24px;
+}
+
+.lib-card {
+  position: relative;
+  width: 268px;
+  height: 168px;
+  flex: none;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(20, 26, 62, 0.5);
+}
+
+.lib-card-art {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.lib-card-art.tone-violet { background: linear-gradient(145deg, #7a68e8, #35357f 72%); }
+.lib-card-art.tone-rose { background: linear-gradient(145deg, #e070ab, #57305f 72%); }
+.lib-card-art.tone-sky { background: linear-gradient(145deg, #55a2e0, #2a3d7a 72%); }
+.lib-card-art.tone-amber { background: linear-gradient(145deg, #d9a05c, #5b3f2c 72%); }
+.lib-card-art.tone-plum { background: linear-gradient(145deg, #9a72e0, #3d3070 72%); }
+.lib-card-art.tone-mint { background: linear-gradient(145deg, #4fb8a2, #23463f 72%); }
+
+.lib-card-grain {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.14) 1px, transparent 1px);
+  background-size: 7px 7px;
+  opacity: 0.35;
+}
+
+.lib-card-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 34%, rgba(8, 11, 32, 0.55) 62%, rgba(8, 11, 32, 0.92) 100%);
+}
+
+.lib-card-title {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  height: 11px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.62);
+}
+
+/* ---- 焦点 ---- */
+
+.lib-search.is-focused,
+.lib-search:focus-visible,
+.lib-pill.is-focused,
+.lib-pill:focus-visible,
+.lib-cat.is-focused,
+.lib-cat:focus-visible,
+.lib-card.is-focused,
+.lib-card:focus-visible,
+.lib-btn.is-focused,
+.lib-btn:focus-visible,
+.lib-shelf-link.is-focused,
+.lib-shelf-link:focus-visible,
+.lib-banner.is-focused,
+.lib-banner:focus-visible,
+.lib-option.is-focused,
+.lib-option:focus-visible,
+.lib-chip.is-focused,
+.lib-chip:focus-visible,
+.lib-panel-close.is-focused,
+.lib-panel-close:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.lib-cat.is-focused,
+.lib-card.is-focused,
+.lib-btn.is-focused,
+.lib-pill.is-focused {
+  transform: scale(1.03);
+}
+
+.lib-card.is-focused {
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 18px 40px rgba(70, 90, 220, 0.32);
+}
+
+.lib-banner.is-focused {
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+/* ---- 筛选 / 排序面板 ---- */
+
+.lib-panel {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  background: rgba(5, 8, 26, 0.55);
+  backdrop-filter: blur(8px);
+}
+
+.lib-panel[hidden] {
+  display: none;
+}
+
+.lib-panel-card {
+  width: 760px;
+  max-height: 760px;
+  padding: 26px 30px 22px;
+  border-radius: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.06) 60%, rgba(255, 255, 255, 0.1));
+  box-shadow: 0 34px 90px rgba(6, 9, 32, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lib-panel-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.lib-panel-kicker {
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  color: rgba(255, 255, 255, 0.46);
+}
+
+.lib-panel-head h2 {
+  margin: 6px 0 0;
+  font-family: var(--font-display);
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+
+.lib-panel-close {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.lib-panel-close .icon {
+  width: 18px;
+  height: 18px;
+}
+
+.lib-panel-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+}
+
+.lib-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lib-filter-label {
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.08em;
+}
+
+.lib-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.lib-chip {
+  height: 38px;
+  padding: 0 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+}
+
+.lib-chip.is-active {
+  border-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.lib-option-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lib-option {
+  height: 52px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+}
+
+.lib-option .icon {
+  width: 18px;
+  height: 18px;
+  opacity: 0;
+}
+
+.lib-option.is-active {
+  border-color: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+}
+
+.lib-option.is-active .icon {
+  opacity: 1;
+}
+
+.lib-panel-foot {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.lib-legacy {
+  display: none !important;
+}
+
+/* 真实内容卡片（有源时）：海报完整不裁切 + 状态角标 + 两行标题 */
+.lib-card-art {
+  overflow: hidden;
+}
+
+/* 横版封面：铺满卡片，只裁上下，不出现留边 */
+.lib-card-art img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+  display: block;
+  transform: scale(1.01);
+}
+
+.lib-card-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  max-width: 62%;
+  padding: 4px 9px;
+  border-radius: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(8, 12, 32, 0.74);
+  color: #fff;
+  font-size: 11.5px;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.02em;
+}
+
+.lib-card-copy {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 12px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lib-card.has-art .lib-card-title {
+  position: static;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.28;
+  color: #fff;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-shadow: 0 1px 6px rgba(4, 8, 26, 0.75);
+}
+
+.lib-card-meta {
+  font-size: 11.5px;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.72);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lib-banner-art.has-photo {
+  background-size: cover;
+  background-position: center 32%;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.lib-banner-art.has-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.lib-banner-art.has-photo::after {
+  opacity: 0.35;
+}
+/* ============ 竖版海报货架（参考 kanju4 首页卡片） ============ */
+
+.lib-shelf-poster .lib-rail {
+  height: 417px;
+  gap: 24px;
+}
+
+.lib-card.poster-card {
+  position: relative;
+  width: 278px;
+  height: 417px;
+  flex: none;
+  display: block;
+  border-radius: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(14, 18, 40, 0.6);
+  overflow: hidden;
+  box-shadow: 0 12px 26px rgba(6, 10, 32, 0.28);
+  transition: transform var(--dur-normal) var(--ease-out), box-shadow var(--dur-normal) var(--ease-out), border-color var(--dur-normal) var(--ease-out);
+}
+
+.poster-cover {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.poster-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+  display: block;
+}
+
+.poster-card .lib-card-shade {
+  background: linear-gradient(180deg, rgba(6, 8, 18, 0.42) 0%, transparent 26%, transparent 44%, rgba(6, 8, 18, 0.9) 100%);
+}
+
+.poster-badges {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  right: 9px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.poster-status {
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(8, 10, 22, 0.58);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 62%;
+}
+
+.poster-score {
+  margin-left: auto;
+  color: rgba(254, 249, 195, 0.92);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.poster-copy {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.poster-title {
+  height: 24px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fff;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px 8px rgba(4, 6, 18, 0.8);
+}
+
+.poster-meta {
+  height: 18px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.64);
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.poster-card.is-focused,
+.poster-card:focus-visible {
+  transform: scale(1.04);
+  border-color: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9), 0 22px 48px rgba(70, 90, 220, 0.4);
+}
+
+.poster-card.is-focused .poster-title {
+  color: #fff;
+}
+/* 无源/无数据时的货架提示 */
+.lib-shelf-empty {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 100%;
+  padding: 0 8px;
+  border-radius: 18px;
+  border: 1px dashed rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 15px;
+}
+
+.lib-shelf-empty .icon {
+  width: 22px;
+  height: 22px;
+  opacity: 0.7;
+}
+/* ---------- 推荐位：竖版海报前置 ---------- */
+
+.lib-banner-poster {
+  position: absolute;
+  left: 36px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.lib-banner-poster img {
+  width: 264px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 24px 56px rgba(6, 10, 30, 0.6);
+}
+
+/* 旧版的「海报在左、文字靠右」布局已废弃，规则清空 */
+
+/* 海报封面兜底 */
+.poster-cover.is-fallback {
+  background:
+    radial-gradient(120% 90% at 20% 16%, rgba(168, 140, 255, 0.5), transparent 60%),
+    linear-gradient(150deg, #2b3566, #1a2148 60%, #131a38);
+}
+
+.poster-cover.is-fallback::before {
+  content: attr(data-initial);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.24);
+}
+
+/* 热播轨道：卡片放到 300×420，显示全部后可滚动 */
+.lib-shelf-poster .lib-rail {
+  height: 452px;
+  gap: 20px;
+}
+
+.lib-shelf-poster .lib-card {
+  flex: 0 0 300px;
+  width: 300px;
+  height: 420px;
+}
+
+.lib-shelf-poster .poster-title {
+  font-size: 21px;
+}
+
+.lib-shelf-poster .poster-meta {
+  font-size: 15px;
+}
+/* 轮播点避开左侧海报 */
+.lib-banner .lib-dots {
+  left: auto;
+  right: 44px;
+  bottom: 26px;
+}
+/* ============================================================
+   聚合片库 · 顶部横向固定导航（2.0）
+   高度 = 屏幕 9%（1080 → 97px）
+   ============================================================ */
+
+.lib-topbar {
+  height: 97px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  /* 背景与页面完全同色：不铺底色、不加模糊，直接透出下方主视觉 */
+  background: transparent;
+  backdrop-filter: none;
+  position: relative;
+  top: 0;
+  z-index: 30;
+}
+
+.lib-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+
+/* ---- 中间 Tab ---- */
+
+.lib-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-width: 0;
+}
+
+.lib-tab {
+  height: 56px;
+  padding: 0 26px;
+  border-radius: 28px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--font-display, system-ui);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  transition:
+    color 190ms cubic-bezier(0.22, 1, 0.36, 1),
+    background 190ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 190ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 190ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.lib-tab:hover {
+  color: #fff;
+}
+
+.lib-tab.is-active {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.16);
+  background: linear-gradient(135deg, #8f74f7 0%, #6a6cf2 46%, #5a63ea 100%);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.12) inset,
+    0 8px 26px rgba(104, 92, 240, 0.38),
+    0 0 22px rgba(126, 108, 247, 0.45);
+}
+
+.lib-tab.is-focused {
+  color: #fff;
+  outline: none;
+  transform: scale(1.04);
+  box-shadow:
+    0 0 0 2px #fff,
+    0 8px 26px rgba(0, 0, 0, 0.45);
+}
+
+.lib-tab.is-active.is-focused {
+  box-shadow:
+    0 0 0 2px #fff,
+    0 8px 30px rgba(104, 92, 240, 0.55),
+    0 0 28px rgba(126, 108, 247, 0.6);
+}
+
+/* ---- 右侧图标 ---- */
+
+.lib-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lib-icon-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.07);
+  transition:
+    background 190ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 190ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 190ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.lib-icon-btn .icon {
+  width: 22px;
+  height: 22px;
+  color: #fff;
+  stroke-width: 1.9;
+}
+
+.lib-icon-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.lib-icon-btn.is-focused {
+  outline: none;
+  transform: scale(1.1);
+  background: #fff;
+  box-shadow: 0 0 0 2px #fff, 0 10px 24px rgba(0, 0, 0, 0.5);
+}
+
+.lib-icon-btn.is-focused .icon {
+  color: #0a0b10;
+}
+
+/* topbar 变高后主内容区留白收紧 */
+.lib-main {
+  margin-top: 22px;
+}
+/* ============================================================
+   方案 1：影院式全宽 Hero
+   ============================================================ */
+
+.lib-hero-row {
+  display: block;
+  flex: none;
+  height: auto;
+  margin: 0 -64px;
+}
+
+.lib-banner {
+  position: relative;
+  width: 100%;
+  height: 440px;
+  flex: none;
+  border-radius: 0;
+  border: none;
+  overflow: hidden;
+  text-align: left;
+  /* 全部用主题紫（#6d5efc）的明暗变体，不再掺黑色 */
+  background:
+    radial-gradient(95% 145% at 7% 38%, rgba(109, 94, 252, 0.4) 0%, rgba(109, 94, 252, 0.12) 46%, transparent 74%),
+    radial-gradient(70% 105% at 90% 80%, rgba(139, 118, 255, 0.26) 0%, transparent 64%),
+    linear-gradient(112deg, #1b1540 0%, #221b4c 36%, #2a2159 68%, #302566 100%);
+}
+
+/* 背景层留空，靠 .lib-banner 的渐变；有图时才铺 */
+.lib-banner-art {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  filter: none;
+  opacity: 1;
+}
+
+.lib-banner-art::after {
+  opacity: 0;
+}
+
+.lib-banner-art.has-photo {
+  background-size: cover;
+  background-position: center 32%;
+  background-repeat: no-repeat;
+  filter: blur(30px) saturate(1.05) brightness(0.5);
+  transform: scale(1.12);
+}
+
+/* 多层遮罩：左侧压暗给文字，底部融入页面底色 */
+.lib-banner-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  /* 只留横向压暗，底部不再压黑——让紫色渐变一直延伸到底 */
+  background: linear-gradient(
+    90deg,
+    rgba(24, 19, 52, 0.94) 0%,
+    rgba(24, 19, 52, 0.88) 22%,
+    rgba(24, 19, 52, 0.52) 44%,
+    rgba(24, 19, 52, 0.14) 68%,
+    transparent 88%
+  );
+}
+
+/* 文字区 */
+.lib-banner-copy {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  max-width: none;
+  width: auto;
+  padding: 0 0 0 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  max-width: 660px;
+  width: 660px;
+}
+
+.lib-banner-tag {
+  align-self: flex-start;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(139, 118, 255, 0.45);
+  background: rgba(109, 92, 246, 0.28);
+  font-family: var(--font-display, system-ui);
+  font-size: 15px;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  color: #ddd6ff;
+}
+
+.lib-banner-title {
+  margin: 0;
+  font-family: var(--font-display, system-ui);
+  font-size: 52px;
+  line-height: 1.08;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.012em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.lib-banner-meta {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 11px;
+  font-family: var(--font-display, system-ui);
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.lib-banner-meta > span {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.lib-banner-meta > span + span::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  width: 1px;
+  height: 11px;
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.lib-banner-meta em {
+  font-style: normal;
+  font-weight: 750;
+  color: #ffc247;
+}
+
+.lib-banner-desc {
+  margin: 0;
+  max-width: 540px;
+  font-family: var(--font-display, system-ui);
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.62);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.lib-banner-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.lib-banner-actions .lib-btn {
+  height: 52px;
+  padding: 0 26px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-display, system-ui);
+  font-size: 18px;
+  font-weight: 650;
+  border: 1px solid transparent;
+  transition:
+    transform 190ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 190ms cubic-bezier(0.22, 1, 0.36, 1),
+    background 190ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.lib-banner-actions .lib-btn .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.lib-banner-actions .lib-btn.primary {
+  background: linear-gradient(135deg, #8f74f7 0%, #6a6cf2 52%, #5a63ea 100%);
+  color: #fff;
+  box-shadow: 0 10px 28px rgba(104, 92, 240, 0.38);
+}
+
+.lib-banner-actions .lib-btn.ghost {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+.lib-banner-actions .lib-btn.is-focused {
+  outline: none;
+  transform: scale(1.05);
+  box-shadow: 0 0 0 3px #fff, 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* 右侧竖版海报 */
+.lib-banner-poster {
+  position: absolute;
+  right: 17%;
+  top: 50%;
+  bottom: auto;
+  left: auto;
+  transform: translateY(-50%);
+  display: block;
+  width: 280px;
+  height: 420px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.lib-banner-poster::before {
+  content: "";
+  position: absolute;
+  inset: -14%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(126, 108, 247, 0.24), transparent 68%);
+  filter: blur(30px);
+  z-index: -1;
+}
+
+.lib-banner-poster img {
+  width: 280px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
+}
+
+/* 轮播点：左下 */
+.lib-banner .lib-dots,
+.lib-dots {
+  position: absolute;
+  left: 64px;
+  right: auto;
+  bottom: 28px;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.lib-dots i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: width 220ms cubic-bezier(0.22, 1, 0.36, 1), background 220ms;
+}
+
+.lib-dots i.is-active {
+  width: 30px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #8f74f7, #5a63ea);
+  box-shadow: 0 0 12px rgba(126, 108, 247, 0.55);
+}
+/* ============================================================
+   方案 A：海报提取色光晕
+   - 背景色从当前海报采样，轮播换片时整块色调跟着变
+   - 海报放大到 300×450（源图 270，1.11 倍）
+   ============================================================ */
+
+.lib-banner {
+  /* 兜底底色；采样成功后由 JS 覆盖 .lib-banner-art 的 background */
+  background: linear-gradient(112deg, #0a0b12 0%, #0c0d16 46%, #0e0f1a 100%);
+}
+
+.lib-banner-art {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(112deg, #0b0c14 0%, #0d0e18 52%, #10111c 100%);
+  transition: background 700ms cubic-bezier(0.22, 1, 0.36, 1);
+  filter: none;
+}
+
+.lib-banner-art.has-tint {
+  /* 具体渐变由 JS 写入 */
+  background-size: cover;
+}
+
+/* 提取色出来后，遮罩可以更轻，让颜色透出来 */
+.lib-banner-scrim.is-tinted {
+  background: linear-gradient(
+    90deg,
+    rgba(8, 9, 14, 0.88) 0%,
+    rgba(8, 9, 14, 0.78) 24%,
+    rgba(8, 9, 14, 0.42) 48%,
+    rgba(8, 9, 14, 0.08) 72%,
+    transparent 90%
+  );
+}
+
+/* 海报放到偏中，尺寸放大 */
+.lib-banner-poster {
+  right: 14%;
+  width: 300px;
+  height: 450px;
+}
+
+.lib-banner-poster img {
+  width: 300px;
+  height: 450px;
+  border-radius: 14px;
+}
+
+.lib-banner-poster::before {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.12), transparent 68%);
+  filter: blur(38px);
+  inset: -20%;
+}
+
+/* 文字区收窄，给海报让位 */
+.lib-banner-copy {
+  width: 560px;
+  max-width: 560px;
+}
+
+.lib-banner-desc {
+  max-width: 500px;
+}
+/* Banner 宽度收紧：不再满屏出血，回到内容区并加圆角 */
+.lib-hero-row {
+  margin: 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.lib-banner {
+  border-radius: 20px;
+  height: 410px;
+  max-height: 410px;
+}
+
+.lib-banner-art,
+.lib-banner-scrim {
+  border-radius: 20px;
+}
+
+.lib-banner-poster {
+  right: 9%;
+  width: 268px;
+  height: 402px;
+}
+
+.lib-banner-poster img {
+  width: 268px;
+  height: 402px;
+}
+
+.lib-banner-copy {
+  width: 540px;
+  max-width: 540px;
+  padding-left: 56px;
+}
+
+.lib-banner .lib-dots {
+  left: 56px;
+}
+/* 轮播切换时海报淡入 */
+.lib-banner-poster img {
+  transition: opacity 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* 指示点可点击 */
+.lib-banner .lib-dots i {
+  cursor: pointer;
+  pointer-events: auto;
+}
+/* 内容带：一屏正好 6 张完整海报 */
+.lib-rail {
+  height: auto;
+  gap: 20px;
+}
+
+.lib-rail .lib-card {
+  width: calc((100% - 100px) / 6);
+  height: auto;
+  flex: none;
+  aspect-ratio: 274 / 383;
+}
+
+.lib-rail .lib-card .poster-cover {
+  height: 100%;
+}
+
+.lib-rail .lib-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 强制 6 张一屏：压掉旧的固定宽高（.lib-card.poster-card 278×417 等） */
+.lib-rail .lib-card,
+.lib-rail .lib-card.poster-card {
+  width: calc((100% - 100px) / 6) !important;
+  height: auto !important;
+  flex: 0 0 auto !important;
+  aspect-ratio: 274 / 383;
+}
+
+.lib-rail .lib-card .poster-cover,
+.lib-rail .lib-card.poster-card .poster-cover {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.lib-rail .lib-card .poster-cover img {
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover;
+}
+/* 每带固定 6 张，去掉横向滚动 */
+.lib-rail {
+  overflow: visible;
+}
+
+.lib-rail::-webkit-scrollbar {
+  display: none;
+}
+/* ============================================================
+   版面收口 2026-11-19
+   ① Hero 加「接下来」海报簇，填掉文字区与海报之间 800px 的空档
+   ② 内容带卡片回到 2:3，一屏 6 张不再被屏幕下沿裁掉
+   ③ 「继续观看」货架：有播放记录才出现，没有就整块隐藏
+   ============================================================ */
+
+/* ---- ① Hero ---- */
+
+/* 386 + 24 + 头 36 + 10 + 卡 423 = 879，正好等于 .lib-main 的可视高度 */
+.lib-banner {
+  height: 386px;
+  max-height: 386px;
+}
+
+.lib-banner-copy {
+  width: 600px;
+  max-width: 600px;
+}
+
+.lib-banner-desc {
+  max-width: 544px;
+}
+
+/* 主海报贴右，左侧留 56 的安全边，与文字区左侧缩进对称 */
+.lib-banner-poster {
+  right: 56px;
+  width: 250px;
+  height: 378px;
+}
+
+.lib-banner-poster img {
+  width: 250px;
+  height: 378px;
+}
+
+/* 接下来两部的海报：靠右锚定，越靠近主海报越亮 */
+.lib-banner-next {
+  position: absolute;
+  top: 50%;
+  right: calc(56px + 250px + 24px);
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.lib-banner-next[hidden] {
+  display: none;
+}
+
+.lib-banner-next .lib-banner-peek {
+  position: relative;
+  width: 232px;
+  height: 348px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.5);
+  background: rgba(10, 12, 22, 0.55);
+  opacity: 0.5;
+  transition: opacity 320ms var(--ease-out, ease);
+}
+
+.lib-banner-next .lib-banner-peek.is-far {
+  opacity: 0.28;
+}
+
+.lib-banner-next .lib-banner-peek img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lib-banner .lib-dots {
+  bottom: 24px;
+}
+
+/* ---- ② 内容带：6 张固定 2:3 ---- */
+
+.lib-main {
+  /* 多带时（继续观看 + 正在热播）可以上下走焦点，滚动条不显示 */
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+.lib-main::-webkit-scrollbar {
+  display: none;
+}
+
+.lib-shelf {
+  flex: none;
+}
+
+.lib-shelf-poster .lib-rail {
+  height: auto;
+  align-items: flex-start;
+}
+
+.lib-rail .lib-card,
+.lib-rail .lib-card.poster-card {
+  /* 282 × 423，正好是源海报 270×404 的 2:3，不裁切 */
+  aspect-ratio: 2 / 3;
+  height: auto !important;
+  align-self: flex-start;
+}
+
+/* ---- ③ 继续观看已迁到最首页的「最近观看」，片库页不再保留这条货架 ---- */
+/* ============================================================
+   Hero 提亮：深紫底 + 海报模糊层 + 减半蒙版   2026-11-19
+   改前实测：文字区 38 / 中段 23 / 右侧 43（页面背景 121）
+   ============================================================ */
+
+/* ① 底色从近黑换成品牌深紫 */
+.lib-banner {
+  background: linear-gradient(112deg, #241b4a 0%, #2c2159 46%, #352a68 100%);
+}
+
+.lib-banner-art {
+  background: linear-gradient(112deg, #241b4a 0%, #2c2159 52%, #352a68 100%);
+}
+
+/* ② 海报放大模糊铺底：--hero-poster 由 library-ui.js 写入 */
+.lib-banner::before {
+  content: "";
+  position: absolute;
+  inset: -46px;
+  z-index: 0;
+  pointer-events: none;
+  background-image: var(--hero-poster, none);
+  background-position: 62% center;
+  background-size: cover;
+  filter: blur(46px) saturate(1.25) brightness(0.95);
+  transform: scale(1.12);
+  /* 左侧淡出：文字区靠底色撑亮度，免得海报的暗部压成一条暗带 */
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    transparent 34%,
+    rgba(0, 0, 0, 0.45) 58%,
+    #000 82%,
+    #000 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    transparent 34%,
+    rgba(0, 0, 0, 0.45) 58%,
+    #000 82%,
+    #000 100%
+  );
+  transition: opacity 420ms var(--ease-out, ease);
+}
+
+/* ③ 蒙版减半：左侧留对比垫，66% 之后完全放开 */
+.lib-banner-scrim.is-tinted {
+  background: linear-gradient(
+    90deg,
+    rgba(10, 8, 24, 0.38) 0%,
+    rgba(10, 8, 24, 0.24) 26%,
+    rgba(10, 8, 24, 0.08) 52%,
+    rgba(10, 8, 24, 0.03) 72%,
+    transparent 88%
+  );
+}
+
+/* 没取到色时也用同一套底色，避免回落到近黑 */
+.lib-banner-scrim {
+  background: linear-gradient(
+    90deg,
+    rgba(10, 8, 24, 0.68) 0%,
+    rgba(10, 8, 24, 0.5) 30%,
+    rgba(10, 8, 24, 0.16) 62%,
+    transparent 86%
+  );
+}
+
+/* ④ 文字跟着加强，保证在变亮的底上仍然清楚 */
+.lib-banner-title {
+  text-shadow: 0 2px 14px rgba(4, 6, 20, 0.62), 0 1px 2px rgba(4, 6, 20, 0.5);
+}
+
+.lib-banner-desc {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 1px 10px rgba(4, 6, 20, 0.5);
+}
+
+.lib-banner-meta {
+  color: rgba(255, 255, 255, 0.72);
+}
