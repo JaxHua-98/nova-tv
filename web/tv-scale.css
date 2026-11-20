@@ -1,0 +1,516 @@
+﻿/* ============================================================
+   NOVA TV · 电视字号标尺 / 安全区       2026-11-19
+   最后加载的一张表：同特异性下由它拍板
+   目标按 10-foot UI：正文 ≥19 · 次要 ≥16 · 最小 ≥14
+   想整体放大或缩小，只改 :root 里这几个变量就够
+   ============================================================ */
+
+:root {
+  --t-cap: 16px;   /* 角标 / kicker / 类型胶囊 / 信息卡 label（+25%） */
+  --t-sm: 18px;    /* 卡片 meta / 查看全部 / 分组条 / 列表筛选 */
+  --t-md: 19px;    /* meta / 线路 chip / 时间 / 信息卡 value */
+  --t-lg: 22px;    /* 正文 / 简介 / 集数按钮 / 帮助 */
+  --t-xl: 25px;    /* 卡片标题 */
+  --t-2xl: 26px;   /* 顶栏 Tab */
+  --t-3xl: 28px;   /* 货架标题 / 分区标题 */
+  --t-4xl: 40px;   /* 播放器标题 */
+  --t-5xl: 46px;   /* 详情大标题 */
+
+  /* 电视 overscan 安全区：左右各 5% */
+  --safe-x: 80px;
+}
+
+/* ============================================================
+   一、安全区
+   ============================================================ */
+
+.page-library .lib-shell {
+  padding: 36px 80px 46px;
+}
+
+.cat-page .cat-shell {
+  padding: 36px 80px 24px;
+}
+
+.lib-banner-copy {
+  padding-left: 80px;
+}
+
+.lib-banner .lib-dots {
+  left: 80px;
+}
+
+.detail-close {
+  right: 80px;
+}
+
+/* ============================================================
+   二、顶栏
+   ============================================================ */
+
+.lib-tab {
+  font-size: var(--t-2xl);
+}
+
+/* ============================================================
+   三、海报卡（全站统一）
+   ============================================================ */
+
+.poster-title,
+.lib-shelf-poster .poster-title,
+.cat-page .poster-title,
+#catPage-list .poster-title {
+  height: 30px;
+  font-size: var(--t-xl);
+  line-height: 30px;
+}
+
+.poster-meta,
+.lib-shelf-poster .poster-meta,
+.cat-page .poster-meta,
+#catPage-list .poster-meta {
+  height: 20px;
+  font-size: var(--t-sm);
+  line-height: 20px;
+}
+
+.poster-copy {
+  gap: 3px;
+}
+
+/* ============================================================
+   四、聚合片库
+   ============================================================ */
+
+.lib-shelf-head {
+  min-height: 40px;
+}
+
+.lib-shelf-head h2 {
+  font-size: var(--t-3xl);
+}
+
+.lib-shelf-link {
+  font-size: var(--t-sm);
+}
+
+.lib-banner-desc {
+  font-size: var(--t-md);
+  line-height: 1.6;
+}
+
+.lib-banner-title {
+  font-size: 44px;
+}
+
+.lib-banner-meta {
+  font-size: var(--t-sm);
+}
+
+.lib-banner-cta {
+  font-size: var(--t-md);
+}
+
+/* ============================================================
+   五、分类页：5 列大卡 336×504（内容宽 1760：5×336 + 4×20）
+   ============================================================ */
+
+.cat-page .lib-rail {
+  height: auto;
+  gap: 20px;
+}
+
+.cat-page .lib-rail .lib-card,
+.cat-page .lib-rail .lib-card.poster-card {
+  width: 336px !important;
+  flex: 0 0 336px !important;
+  height: auto !important;
+  aspect-ratio: 2 / 3;
+}
+
+.cat-page .lib-shelf-head h2,
+.cat-page .cat-shelf-head h2 {
+  font-size: var(--t-3xl);
+}
+
+.cat-page .lib-page-title {
+  font-size: 20px;
+}
+
+.cat-toolbar h2,
+.cat-toolbar .cat-eyebrow,
+.cat-toolbar .cat-count,
+.cat-toolbar .cat-back {
+  font-size: var(--t-sm);
+}
+
+/* ============================================================
+   六、列表页
+   ============================================================ */
+
+.list-chip,
+.more-chip {
+  font-size: var(--t-sm);
+}
+
+.list-sort {
+  height: 44px;
+  font-size: var(--t-md);
+}
+
+.list-chips {
+  height: 46px;
+}
+
+.list-more {
+  font-size: var(--t-md);
+}
+
+.list-empty {
+  font-size: var(--t-lg);
+}
+
+/* ============================================================
+   七、详情页
+   ============================================================ */
+
+/* 海报放大到 300×450，左栏 440 */
+.detail-body {
+  grid-template-columns: 440px minmax(0, 1fr);
+}
+
+.detail-poster {
+  width: 300px;
+  height: 450px;
+}
+
+.detail-actions,
+.detail-facts,
+.detail-rail .detail-footnote {
+  width: 300px;
+}
+
+.detail-main .detail-title {
+  font-size: var(--t-5xl);
+  line-height: 1.15;
+}
+
+.detail-main .detail-meta {
+  font-size: var(--t-md);
+}
+
+.detail-main .detail-description {
+  font-size: var(--t-lg);
+  line-height: 1.6;
+}
+
+.detail-main .detail-kind {
+  height: 32px;
+  min-width: 64px;
+  font-size: var(--t-cap);
+}
+
+.picker-head h3 {
+  font-size: var(--t-3xl);
+}
+
+.picker-sub {
+  font-size: var(--t-sm);
+}
+
+.line-chip {
+  height: 42px;
+  font-size: var(--t-md);
+}
+
+.line-chip em {
+  font-size: 13px;
+}
+
+.group-chip {
+  height: 38px;
+  font-size: var(--t-sm);
+}
+
+.ep-btn {
+  height: 62px;
+  font-size: var(--t-lg);
+}
+
+.fact-label {
+  font-size: var(--t-cap);
+}
+
+.fact-value {
+  font-size: var(--t-md);
+}
+
+.detail-rail .detail-footnote {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.detail-source-card .source-name {
+  font-size: 21px;
+}
+
+.detail-source-card .source-raw {
+  font-size: 15px;
+}
+
+.detail-source-card .source-tag {
+  font-size: var(--t-cap);
+}
+
+.picker-empty {
+  font-size: var(--t-md);
+}
+
+/* ============================================================
+   八、最首页
+   ============================================================ */
+
+.section-head h2 {
+  font-size: var(--t-3xl);
+}
+
+.section-link {
+  height: 38px;
+  font-size: var(--t-sm);
+}
+
+.recent-kicker {
+  font-size: var(--t-cap);
+}
+
+.recent-title {
+  font-size: var(--t-xl);
+}
+
+.recent-progress-text {
+  font-size: var(--t-sm);
+}
+
+.home-empty {
+  font-size: var(--t-md);
+}
+
+.home-row-source {
+  font-size: 13px;
+}
+
+/* ============================================================
+   九、播放器
+   ============================================================ */
+
+.player-kind {
+  height: 30px;
+  font-size: 12px;
+}
+
+.player-heading h2 {
+  font-size: var(--t-4xl);
+}
+
+.player-time-row {
+  font-size: 13px;
+}
+
+.player-help {
+  font-size: 12px;
+}
+
+.player-source-row,
+.player-live-indicator,
+.player-resolution {
+  font-size: 13px;
+}
+
+/* ============================================================
+   卡片焦点语言：只上浮 + 投影，不画边框     2026-11-19
+   全站一张表：海报卡 / 功能卡 / 最近观看 / 片单 / 播放源卡
+   放在最后加载，同特异性规则由它拍板
+   ============================================================ */
+
+.poster-card.is-focused,
+.poster-card:focus-visible,
+.lib-card.is-focused,
+.lib-card:focus-visible,
+.cat-card.is-focused,
+.cat-card:focus-visible,
+.recent-card.is-focused,
+.feature-card.is-focused,
+.feature-card:focus-visible,
+.detail-source-card.is-focused,
+.library-card.is-focused,
+.library-card:focus-visible,
+.saved-card.is-focused,
+.saved-card:focus-visible,
+.live-channel-card.is-focused,
+.live-channel-card:focus-visible,
+.lv-recent-card.is-focused {
+  outline: none !important;
+  border-color: transparent !important;
+  transform: translateY(-7px) scale(1.035);
+  filter: none;
+  z-index: 6;
+  box-shadow:
+    0 28px 56px rgba(4, 8, 28, 0.62),
+    0 10px 22px rgba(4, 8, 28, 0.42);
+}
+
+/* 卡内海报跟着轻微放大，强化「浮起来」的层次 */
+.poster-card.is-focused img,
+.lib-card.is-focused img,
+.library-card.is-focused img,
+.saved-card.is-focused > img,
+.recent-card.is-focused .recent-image img {
+  transform: scale(1.05);
+}
+
+/* ============================================================
+   首页电视化校准（2026-11-19，字号 +25% / 对比度 / 目标尺寸）
+   最后加载的表，直接覆盖各页写死的小字号
+   ============================================================ */
+
+/* ---- 一、顶栏 ---- */
+
+.topbar-search {
+  height: 56px;
+  width: 460px;
+  font-size: var(--t-md);
+}
+
+.topbar-search-placeholder { font-size: var(--t-md); }
+.topbar-search-hint { height: 30px; font-size: var(--t-cap); line-height: 30px; }
+
+.status-button {
+  width: 56px;
+  height: 56px;
+}
+
+.brand-name { font-size: 24px; }
+.brand-tagline { font-size: 15px; color: rgba(255, 255, 255, 0.66); }
+
+/* ---- 二、时钟与日期 ---- */
+
+.clock { font-size: 96px; }
+.date-line { font-size: 22px; }
+
+/* ---- 三、最近观看（文字行） ---- */
+
+.hero-recent-label { font-size: var(--t-md); color: rgba(255, 255, 255, 0.7); }
+
+.hero-recent-all {
+  height: 48px;
+  padding: 0 16px;
+  font-size: var(--t-md);
+}
+
+.hero-recent-row {
+  height: 52px;
+  gap: 18px;
+  grid-template-columns: minmax(0, 1.6fr) 140px 64px 150px 96px;
+}
+
+.hero-recent-title { font-size: var(--t-lg); }
+.hero-recent-ep { font-size: var(--t-md); color: rgba(255, 255, 255, 0.66); }
+.hero-recent-pct { font-size: var(--t-md); color: rgba(255, 255, 255, 0.82); }
+.hero-recent-time { font-size: var(--t-md); color: rgba(255, 255, 255, 0.62); }
+.hero-recent-left { font-size: var(--t-md); color: rgba(255, 255, 255, 0.62); }
+.hero-recent-empty { height: 52px; font-size: var(--t-md); color: rgba(255, 255, 255, 0.6); }
+
+/* ---- 四、功能卡 ---- */
+
+.feature-title { font-size: 30px; }
+.feature-description { font-size: 18px; color: rgba(255, 255, 255, 0.78); }
+
+/* ---- 五、热门内容 ---- */
+
+.home-shelf-kicker { font-size: 15px; color: rgba(255, 255, 255, 0.62); }
+.home-shelf-title h3 { font-size: 26px; }
+
+.home-shelf-chip {
+  height: 52px;
+  padding: 0 22px;
+  font-size: var(--t-md);
+}
+
+.home-shelf-chip em { font-size: 14px; }
+
+.home-shelf-meta { font-size: var(--t-md); color: rgba(255, 255, 255, 0.66); }
+
+.home-shelf-link {
+  height: 48px;
+  padding: 0 18px;
+  font-size: var(--t-md);
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.home-rail .poster-title { font-size: 24px; }
+.home-rail .poster-meta { font-size: 18px; color: rgba(255, 255, 255, 0.72); }
+
+.poster-status,
+.home-badge-ep {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+/* ---- 六、焦点：4px 环 + 更强的卡片态 ---- */
+
+.focusable.is-focused,
+.focusable:focus-visible {
+  outline-width: 4px !important;
+  outline-offset: 4px;
+}
+
+.home-rail .lib-card.poster-card.is-focused,
+.home-rail .lib-card.poster-card:focus-visible {
+  transform: translateY(-6px) scale(1.05);
+  border-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.92), 0 26px 54px rgba(70, 90, 220, 0.46);
+  filter: brightness(1.08);
+}
+
+.hero-recent-row.is-focused,
+.hero-recent-row:focus-visible {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.topbar-search.is-focused,
+.topbar-search:focus-visible {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* ---- 七、布局跟着长高 ---- */
+
+.hero-row {
+  min-height: 196px;
+}
+/* 片单页卡片窄（205 宽），标题用 25px 会被截太狠，单独收到 20px */
+.saved-grid .poster-title {
+  font-size: 20px;
+  line-height: 26px;
+  height: 26px;
+}
+
+.saved-grid .poster-meta {
+  font-size: 16px;
+}
+
+/* 首页一屏到底：不做上下滚动，也不要滚动动画 */
+main.content {
+  overflow-y: hidden !important;
+  scroll-behavior: auto !important;
+  padding-bottom: 0 !important;
+}
+
+.hero-row { min-height: 178px !important; }
+.hero-recent-row { min-height: 48px !important; padding-top: 0 !important; padding-bottom: 0 !important; }
+.feature-grid { margin-top: 10px !important; }
+.feature-card { height: 126px !important; padding-top: 14px !important; padding-bottom: 14px !important; }
+.home-shelves { margin-top: 8px !important; padding: 8px 16px 6px !important; }
+.home-shelf { gap: 10px !important; }
+.home-shelf-title { margin: 0 !important; }
+.home-rail { padding: 4px 6px 6px !important; }

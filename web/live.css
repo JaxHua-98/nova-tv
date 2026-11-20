@@ -1,0 +1,920 @@
+﻿/* NOVA TV · 电视直播（单页双栏）
+   左：播放器 + 当前节目信息；右：分组 chips + 频道列表。 */
+
+.lv-shell {
+  position: absolute;
+  inset: 0;
+  padding: 32px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.lv-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(9, 15, 44, 0.2) 0%, rgba(9, 15, 44, 0.06) 42%, rgba(9, 15, 44, 0.24) 100%),
+    var(--stage-bg);
+}
+
+.lv-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, transparent 20%, transparent 76%, rgba(8, 14, 40, 0.18) 100%),
+    radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.07), transparent 52%);
+}
+
+/* ---------- 顶栏 ---------- */
+
+.lv-topbar {
+  position: relative;
+  z-index: 2;
+  height: 84px;
+  flex: 0 0 84px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.lv-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+
+
+
+
+.lv-divider {
+  width: 1px;
+  height: 30px;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.34), transparent);
+}
+
+.lv-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 25px;
+  font-weight: 750;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.lv-spacer {
+  flex: 1 1 auto;
+}
+
+.lv-search {
+  width: 380px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.56);
+  font-family: var(--font-body);
+  font-size: 15px;
+  transition:
+    background var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out);
+}
+
+.lv-search .icon {
+  width: 19px;
+  height: 19px;
+  opacity: 0.8;
+}
+
+.lv-search.is-focused {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.92);
+  box-shadow:
+    0 0 0 2px rgba(255, 255, 255, 0.5),
+    0 16px 40px rgba(140, 120, 255, 0.34);
+}
+
+.lv-status {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.lv-status i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #6ee7b7;
+  box-shadow: 0 0 8px rgba(110, 231, 183, 0.8);
+}
+
+.lv-status.is-empty i {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: none;
+}
+
+/* ---------- 主体 ---------- */
+
+.lv-main {
+  position: relative;
+  z-index: 2;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1020px minmax(0, 1fr);
+  gap: 24px;
+}
+
+/* 播放器 */
+
+.lv-player {
+  position: relative;
+  border-radius: var(--radius-section);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(10, 16, 40, 0.42);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    0 28px 64px rgba(8, 13, 42, 0.44);
+  display: flex;
+  flex-direction: column;
+}
+
+.lv-stage {
+  position: relative;
+  height: 574px;
+  flex: 0 0 574px;
+  overflow: hidden;
+  background: #0a1024;
+}
+
+.lv-stage video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #05081a;
+}
+
+.lv-blank {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 26% 30%, rgba(96, 165, 250, 0.4), transparent 48%),
+    radial-gradient(circle at 74% 68%, rgba(168, 120, 250, 0.34), transparent 52%),
+    linear-gradient(160deg, #17204a, #101a38);
+}
+
+.lv-blank-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+.lv-blank-icon {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.lv-blank-icon .icon {
+  width: 30px;
+  height: 30px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.lv-overlay {
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  right: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  pointer-events: none;
+}
+
+.lv-channel-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 12px;
+  background: rgba(9, 14, 38, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(14px);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.lv-live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  padding: 0 13px;
+  border-radius: 999px;
+  background: rgba(255, 74, 92, 0.2);
+  border: 1px solid rgba(255, 96, 112, 0.55);
+  color: #ffd7dc;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.lv-live-badge i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ff4a5c;
+  box-shadow: 0 0 10px rgba(255, 74, 92, 0.9);
+  animation: lv-pulse 1.8s infinite;
+}
+
+@keyframes lv-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* 播放器信息区 */
+
+.lv-info {
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 24px 28px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: linear-gradient(180deg, rgba(11, 17, 44, 0.5), rgba(9, 14, 38, 0.72));
+}
+
+.lv-now-title {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 750;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lv-now-sub {
+  font-family: var(--font-body);
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.56);
+}
+
+.lv-progress {
+  position: relative;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+}
+
+.lv-progress > i {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #8ab4ff, #c9a8ff);
+  box-shadow: 0 0 12px rgba(160, 160, 255, 0.6);
+  transition: width 400ms linear;
+}
+
+.lv-controls {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lv-btn {
+  height: 50px;
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border-radius: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.9);
+  font-family: var(--font-body);
+  font-size: 15px;
+  transition:
+    background var(--dur-fast) var(--ease-out),
+    transform var(--dur-normal) var(--ease-out);
+}
+
+.lv-btn .icon {
+  width: 19px;
+  height: 19px;
+}
+
+.lv-btn.primary {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #12203f;
+  font-weight: 650;
+}
+
+.lv-btn.is-focused {
+  transform: scale(1.04);
+  box-shadow:
+    0 0 0 2px rgba(255, 255, 255, 0.94),
+    0 0 28px rgba(255, 255, 255, 0.34),
+    0 14px 30px rgba(9, 14, 44, 0.34);
+}
+
+.lv-src {
+  margin-left: auto;
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.44);
+}
+
+/* 右侧：分组 + 频道 */
+
+.lv-side {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 0;
+}
+
+.lv-groups {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.lv-chip {
+  flex: 1 1 auto;
+  height: 58px;
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.66);
+  font-family: var(--font-body);
+  font-size: 21px;
+  font-weight: 550;
+  white-space: nowrap;
+  transition:
+    background var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out),
+    transform var(--dur-normal) var(--ease-out);
+}
+
+.lv-chip em {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.lv-chip.is-active {
+  background: #ffffff;
+  color: #12203f;
+  box-shadow: 0 6px 18px rgba(8, 14, 40, 0.28);
+}
+
+.lv-chip.is-active em {
+  color: rgba(18, 32, 63, 0.58);
+}
+
+.lv-chip.is-focused {
+  transform: scale(1.03);
+  box-shadow:
+    0 0 0 2px rgba(255, 255, 255, 0.92),
+    0 0 24px rgba(255, 255, 255, 0.32);
+}
+
+.lv-channels {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-right: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.22) transparent;
+}
+
+.lv-channels::-webkit-scrollbar {
+  width: 6px;
+}
+
+.lv-channels::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+}
+
+.lv-channels::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.lv-row {
+  position: relative;
+  height: 112px;
+  flex: 0 0 112px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 24px 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  text-align: left;
+  overflow: hidden;
+  transition:
+    background var(--dur-fast) var(--ease-out),
+    transform var(--dur-normal) var(--ease-out);
+}
+
+.lv-row.is-playing {
+  border-color: rgba(140, 190, 255, 0.45);
+  background: linear-gradient(90deg, rgba(120, 160, 255, 0.18), rgba(120, 160, 255, 0.04));
+}
+
+.lv-row.is-playing::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  bottom: 12px;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: linear-gradient(180deg, #8ab4ff, #c9a8ff);
+}
+
+.lv-row.is-focused {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow:
+    0 0 0 4px #ffffff,
+    0 0 32px rgba(255, 255, 255, 0.45),
+    0 20px 48px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.lv-row-logo {
+  position: relative;
+  width: 88px;
+  height: 54px;
+  flex: 0 0 88px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.lv-row-logo img {
+  position: absolute;
+  inset: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.lv-row-logo .icon {
+  width: 20px;
+  height: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.lv-row-copy {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lv-row-name {
+  font-family: var(--font-body);
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lv-row-sub {
+  font-family: var(--font-body);
+  font-size: 19px;
+  color: rgba(255, 255, 255, 0.58);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lv-row-bar {
+  flex: 0 0 auto;
+  min-width: 58px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: right;
+}
+
+.lv-row-progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.lv-row-progress > i {
+  display: block;
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+  background: linear-gradient(90deg, #8ab4ff, #c9a8ff);
+  box-shadow: 0 0 10px rgba(140, 170, 255, 0.5);
+}
+
+.lv-empty {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 20px;
+  border: 1px dashed rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--font-body);
+  font-size: 14px;
+  text-align: center;
+  padding: 24px;
+}
+
+.lv-empty .icon {
+  width: 26px;
+  height: 26px;
+  opacity: 0.7;
+}
+
+.lv-hint {
+  position: relative;
+  z-index: 2;
+  flex: 0 0 auto;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: var(--font-body);
+  font-size: 12px;
+}
+
+.lv-hint .icon {
+  width: 14px;
+  height: 14px;
+  opacity: 0.7;
+}
+
+.lv-hint b {
+  color: rgba(255, 255, 255, 0.64);
+  font-weight: 600;
+}
+
+/* ---------- 全屏 ---------- */
+
+.stage:fullscreen {
+  background: #000;
+}
+
+.stage:fullscreen .lv-side,
+.stage:fullscreen .lv-hint,
+.stage:fullscreen .lv-topbar {
+  display: none;
+}
+
+.stage:fullscreen .lv-main {
+  display: block;
+  padding: 0;
+}
+
+.stage:fullscreen .lv-player.is-fullscreen {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  border-radius: 0;
+  background: #000;
+  box-shadow: none;
+}
+
+.stage:fullscreen .lv-player.is-fullscreen .lv-stage {
+  flex: 1 1 auto;
+  height: auto;
+}
+
+.stage:fullscreen .lv-player.is-fullscreen .lv-overlay {
+  opacity: 0;
+  transition: opacity 220ms var(--ease-out);
+}
+
+.stage:fullscreen .lv-player.is-fullscreen .lv-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 80px 56px 36px;
+  background: linear-gradient(180deg, transparent 0%, rgba(4, 7, 20, 0.86) 42%, rgba(4, 7, 20, 0.96) 100%);
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 220ms var(--ease-out),
+    transform 220ms var(--ease-out);
+  pointer-events: none;
+}
+
+.stage:fullscreen .lv-player.is-fullscreen.show-ui .lv-overlay,
+.stage:fullscreen .lv-player.is-fullscreen.show-ui .lv-info {
+  opacity: 1;
+}
+
+.stage:fullscreen .lv-player.is-fullscreen.show-ui .lv-info {
+  transform: none;
+  pointer-events: auto;
+}
+
+.stage:fullscreen .lv-player.is-fullscreen .lv-now-title {
+  font-size: 42px;
+}
+
+.stage:fullscreen .lv-player.is-fullscreen .lv-now-sub {
+  font-size: 24px;
+}
+
+.stage:fullscreen .lv-player.is-fullscreen .lv-btn {
+  height: 60px;
+  font-size: 19px;
+  padding: 0 30px;
+}
+
+.stage:fullscreen .lv-player.is-fullscreen .lv-channel-tag {
+  height: 48px;
+  font-size: 20px;
+  padding: 0 22px;
+}
+
+.stage:fullscreen .lv-player.is-fullscreen .lv-live-badge {
+  height: 42px;
+  font-size: 16px;
+  padding: 0 18px;
+}
+
+/* 全屏换台浮层提示 */
+.lv-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 180px;
+  transform: translateX(-50%) translateY(14px);
+  padding: 14px 28px;
+  border-radius: 16px;
+  background: rgba(8, 12, 32, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 22px;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 180ms var(--ease-out),
+    transform 180ms var(--ease-out);
+  z-index: 9999;
+}
+
+.lv-toast.is-on {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+/* 缓冲指示 */
+.lv-spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -32px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.22);
+  border-top-color: #fff;
+  animation: lv-spin 900ms linear infinite;
+  display: none;
+  z-index: 3;
+}
+
+.lv-spinner.is-on {
+  display: block;
+}
+
+@keyframes lv-spin {
+  to { transform: rotate(360deg); }
+}
+/* ---------- 最近观看 / 信号 ---------- */
+
+.lv-recent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+}
+
+.lv-recent-title {
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.66);
+  letter-spacing: 0.08em;
+}
+
+.lv-recent-row {
+  display: flex;
+  gap: 20px;
+}
+
+.lv-recent-card {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.07);
+  transition:
+    background var(--dur-fast) var(--ease-out),
+    transform var(--dur-normal) var(--ease-out);
+}
+
+.lv-recent-logo {
+  width: 88px;
+  height: 54px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.lv-recent-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.lv-recent-logo .icon {
+  width: 22px;
+  height: 22px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.lv-recent-name {
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lv-recent-card.is-focused {
+  transform: scale(1.06);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow:
+    0 0 0 4px #ffffff,
+    0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+.lv-row-sig {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.lv-row-sig i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.lv-row-sig.is-strong i {
+  background: #6ee7b7;
+  box-shadow: 0 0 8px rgba(110, 231, 183, 0.9);
+}
+
+.lv-row-sig.is-strong {
+  color: #a7f3d0;
+}
+
+.lv-row-sig.is-ok i {
+  background: #fcd34d;
+  box-shadow: 0 0 8px rgba(252, 211, 77, 0.8);
+}
+
+.lv-row-sig.is-ok {
+  color: #fde68a;
+}
+
+.lv-row-sig.is-weak i {
+  background: #fb7185;
+  box-shadow: 0 0 8px rgba(251, 113, 133, 0.8);
+}
+
+.lv-row-sig.is-weak {
+  color: #fecdd3;
+}
+
+.lv-row-bar {
+  font-size: 17px;
+}
+/* 收藏星标 */
+.lv-row-fav {
+  flex: 0 0 auto;
+  font-size: 22px;
+  line-height: 1;
+  color: #fcd34d;
+  text-shadow: 0 0 10px rgba(252, 211, 77, 0.7);
+}
+
+/* ---- 与片库对齐：同样的安全区与顶栏高度，logo 才会落在同一位置 ---- */
+
+.lv-shell {
+  padding: 36px 80px 40px;
+}
+
+.lv-topbar {
+  height: 97px;
+  flex: 0 0 97px;
+}

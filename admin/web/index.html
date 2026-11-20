@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NOVA TV · 管理后台</title>
+<link rel="icon" href="data:," />
+<link rel="stylesheet" href="./app.css" />
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand">
+      <strong>NOVA TV</strong>
+      <span>内容源管理后台</span>
+    </div>
+    <nav id="nav">
+      <button data-route="sources">订阅</button>
+      <button data-route="sites">站点</button>
+      <button data-route="candidates">收集</button>
+      <button data-route="publish">发布</button>
+      <button data-route="settings">设置</button>
+    </nav>
+    <div class="side-foot">
+      <label>token</label>
+      <input id="tokenInput" type="password" placeholder="data/nova/token.txt" />
+      <button id="tokenSave" class="ghost">保存</button>
+      <div id="healthLine" class="muted">连接中…</div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div id="pageTitle">订阅</div>
+      <div class="stats" id="stats"></div>
+    </header>
+    <section id="view" class="view"></section>
+  </main>
+</div>
+
+<div id="toast" class="toast" hidden></div>
+<script src="./app.js"></script>
+</body>
+</html>
